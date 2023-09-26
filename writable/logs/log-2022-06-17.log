@@ -1,0 +1,18 @@
+ERROR - 2022-06-17 02:18:30 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+ERROR - 2022-06-17 02:24:52 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+ERROR - 2022-06-17 02:40:41 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-06-17 02:40:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(96): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([...])
+ 8 SYSTEMPATH\CodeIgniter.php(889): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+10 SYSTEMPATH\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+12 ROOTPATH\spark(86): CodeIgniter\CLI\Console->run()

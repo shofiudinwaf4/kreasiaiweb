@@ -1,0 +1,8 @@
+CRITICAL - 2023-08-02 17:44:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Admin.php on line 73.
+ 1 APPPATH\Controllers\Admin\Admin.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Admin\\Admin.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Admin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

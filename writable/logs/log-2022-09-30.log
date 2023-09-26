@@ -1,0 +1,812 @@
+CRITICAL - 2022-09-30 03:09:54 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 4 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 8 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+12 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+14 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 03:14:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 21.
+ 1 APPPATH\Views\admin\v_editpaketlayanan.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\v_editpaketlayanan.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editpaketlayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 03:15:28 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 23.
+ 1 APPPATH\Views\admin\v_editpaketlayanan.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\admin\\v_editpaketlayanan.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editpaketlayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 03:21:51 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 4 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 8 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+12 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+14 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 03:23:33 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 23.
+ 1 APPPATH\Views\admin\v_editpaketlayanan.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\admin\\v_editpaketlayanan.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editpaketlayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:25:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-09-30 03:25:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `layanan`
+WHERE `id_layanan` = :id_layanan:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:25:20 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-09-30 03:25:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `layanan`
+WHERE `id_layanan` = :id_layanan:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:25:27 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-09-30 03:25:27 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `layanan`
+WHERE `id_layanan` = :id_layanan:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\LayananModel.php(21): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Admin\HomeAdmin.php(353): App\Models\LayananModel->getLayanan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:25:29 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(327): CodeIgniter\BaseModel->paginate(5, 'paket')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(327): CodeIgniter\BaseModel->paginate(5, 'paket')
+#6 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket()
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-30 03:25:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `layanan`', [], false)
+ 3 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Admin\HomeAdmin.php(327): CodeIgniter\BaseModel->paginate(5, 'paket')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:25:35 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(327): CodeIgniter\BaseModel->paginate(5, 'paket')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(327): CodeIgniter\BaseModel->paginate(5, 'paket')
+#6 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket()
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-30 03:25:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `layanan`', [], false)
+ 3 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Admin\HomeAdmin.php(327): CodeIgniter\BaseModel->paginate(5, 'paket')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:25:38 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(46): CodeIgniter\BaseModel->paginate(5, 'layanan')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->Layanan()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(46): CodeIgniter\BaseModel->paginate(5, 'layanan')
+#6 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->Layanan()
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-30 03:25:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `layanan`', [], false)
+ 3 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Admin\HomeAdmin.php(46): CodeIgniter\BaseModel->paginate(5, 'layanan')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->Layanan()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:26:19 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-09-30 03:26:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `layanan`', [], false)
+ 3 SYSTEMPATH\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 5 APPPATH\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+ 6 APPPATH\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:26:56 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-09-30 03:26:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `layanan`', [], false)
+ 3 SYSTEMPATH\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 5 APPPATH\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+ 6 APPPATH\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 03:27:44 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(46): CodeIgniter\BaseModel->paginate(5, 'layanan')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->Layanan()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(46): CodeIgniter\BaseModel->paginate(5, 'layanan')
+#6 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->Layanan()
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-30 03:27:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `layanan`', [], false)
+ 3 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Admin\HomeAdmin.php(46): CodeIgniter\BaseModel->paginate(5, 'layanan')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->Layanan()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 03:46:47 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 4 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 8 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+12 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+14 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 03:48:16 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 4 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 8 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+12 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+14 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 03:48:19 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 4 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 8 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+12 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+14 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 03:54:11 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 23.
+ 1 APPPATH\Views\admin\v_editpaketlayanan.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\admin\\v_editpaketlayanan.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editpaketlayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('1')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 04:08:40 --> mysqli_sql_exception: Unknown column 'nama_paket' in 'field list' in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `layanan...', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `layanan...')
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `layanan...')
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `layanan...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(82): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(380): App\Models\LayananModel->UpdatePaket(Array, '5')
+#6 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->UpdatePaket('5')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-30 04:08:40 --> Unknown column 'nama_paket' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `layanan` SET `id_layanan` = NULL, `nama_paket` = \'paket 1 edit\', `detail_paket` = \'<p><strong>paket 1</strong><i> paket 1</i><s> paket 1 </s><u>paket </u><sup><u>1</u></sup></p><ul><li><span style=\\"color:hsl(240,75%,60%);\\">paket 1 </span><span style=\\"background-color:hsl(0,75%,60%);color:hsl(240,75%,60%);\\">paket 1 23</span></li></ul>\', `harga_paket` = \'2343\', `diskon` = \'2400\'
+WHERE `id_layanan` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `layanan` SET `id_layanan` = NULL, `nama_paket` = \'paket 1 edit\', `detail_paket` = \'<p><strong>paket 1</strong><i> paket 1</i><s> paket 1 </s><u>paket </u><sup><u>1</u></sup></p><ul><li><span style=\\"color:hsl(240,75%,60%);\\">paket 1 </span><span style=\\"background-color:hsl(0,75%,60%);color:hsl(240,75%,60%);\\">paket 1 23</span></li></ul>\', `harga_paket` = \'2343\', `diskon` = \'2400\'
+WHERE `id_layanan` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `layanan` SET `id_layanan` = NULL, `nama_paket` = \'paket 1 edit\', `detail_paket` = \'<p><strong>paket 1</strong><i> paket 1</i><s> paket 1 </s><u>paket </u><sup><u>1</u></sup></p><ul><li><span style=\\"color:hsl(240,75%,60%);\\">paket 1 </span><span style=\\"background-color:hsl(0,75%,60%);color:hsl(240,75%,60%);\\">paket 1 23</span></li></ul>\', `harga_paket` = \'2343\', `diskon` = \'2400\'
+WHERE `id_layanan` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `layanan` SET `id_layanan` = :id_layanan:, `nama_paket` = :nama_paket:, `detail_paket` = :detail_paket:, `harga_paket` = :harga_paket:, `diskon` = :diskon:
+WHERE `id_layanan` = :id_layanan.1:', [...], false)
+ 5 APPPATH\Models\LayananModel.php(82): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\Admin\HomeAdmin.php(380): App\Models\LayananModel->UpdatePaket([...], '5')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->UpdatePaket('5')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-30 04:09:36 --> mysqli_sql_exception: Unknown column 'id_paket' in 'where clause' in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `layanan...', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `layanan...')
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `layanan...')
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `layanan...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(82): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Admin\HomeAdmin.php(380): App\Models\LayananModel->UpdatePaket(Array, '5')
+#6 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->UpdatePaket('5')
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-30 04:09:36 --> Unknown column 'id_paket' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `layanan` SET `id_layanan` = NULL, `nama_paket` = \'paket 1 edit\', `detail_paket` = \'<p><strong>paket 1</strong><i> paket 1</i><s> paket 1 </s><u>paket </u><sup><u>1</u></sup></p><ul><li><span style=\\"color:hsl(240,75%,60%);\\">paket 1 </span><span style=\\"background-color:hsl(0,75%,60%);color:hsl(240,75%,60%);\\">paket 1 23</span></li></ul>\', `harga_paket` = \'2343\', `diskon` = \'2400\'
+WHERE `id_paket` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `layanan` SET `id_layanan` = NULL, `nama_paket` = \'paket 1 edit\', `detail_paket` = \'<p><strong>paket 1</strong><i> paket 1</i><s> paket 1 </s><u>paket </u><sup><u>1</u></sup></p><ul><li><span style=\\"color:hsl(240,75%,60%);\\">paket 1 </span><span style=\\"background-color:hsl(0,75%,60%);color:hsl(240,75%,60%);\\">paket 1 23</span></li></ul>\', `harga_paket` = \'2343\', `diskon` = \'2400\'
+WHERE `id_paket` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `layanan` SET `id_layanan` = NULL, `nama_paket` = \'paket 1 edit\', `detail_paket` = \'<p><strong>paket 1</strong><i> paket 1</i><s> paket 1 </s><u>paket </u><sup><u>1</u></sup></p><ul><li><span style=\\"color:hsl(240,75%,60%);\\">paket 1 </span><span style=\\"background-color:hsl(0,75%,60%);color:hsl(240,75%,60%);\\">paket 1 23</span></li></ul>\', `harga_paket` = \'2343\', `diskon` = \'2400\'
+WHERE `id_paket` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `layanan` SET `id_layanan` = :id_layanan:, `nama_paket` = :nama_paket:, `detail_paket` = :detail_paket:, `harga_paket` = :harga_paket:, `diskon` = :diskon:
+WHERE `id_paket` = :id_paket:', [...], false)
+ 5 APPPATH\Models\LayananModel.php(82): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\Admin\HomeAdmin.php(380): App\Models\LayananModel->UpdatePaket([...], '5')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->UpdatePaket('5')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 04:13:21 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_daftarpaketlayanan.php on line 42.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_daftarpaketlayanan', [], true)
+ 4 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_daftarpaketlayanan')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 8 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+12 APPPATH\Controllers\Admin\HomeAdmin.php(256): view('layoutAdmin/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->PaketLayanan('19')
+14 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 04:21:30 --> Undefined variable $key
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 21.
+ 1 APPPATH\Views\admin\v_editpaketlayanan.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'APPPATH\\Views\\admin\\v_editpaketlayanan.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editpaketlayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('6')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 04:22:01 --> Undefined variable $key
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 21.
+ 1 APPPATH\Views\admin\v_editpaketlayanan.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'APPPATH\\Views\\admin\\v_editpaketlayanan.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editpaketlayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(356): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('6')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 04:31:27 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\v_daftarpaketlayanan.php on line 42.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_daftarpaketlayanan', [], true)
+ 4 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_daftarpaketlayanan')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 8 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+12 APPPATH\Controllers\Admin\HomeAdmin.php(256): view('layoutAdmin/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->PaketLayanan('20')
+14 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 05:47:02 --> Undefined array key "id_paket"
+in APPPATH\Controllers\Admin\HomeAdmin.php on line 259.
+ 1 APPPATH\Controllers\Admin\HomeAdmin.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_paket"', 'APPPATH\\Controllers\\Admin\\HomeAdmin.php', 259)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket('6')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 05:47:22 --> Undefined array key "id_paket"
+in APPPATH\Controllers\Admin\HomeAdmin.php on line 259.
+ 1 APPPATH\Controllers\Admin\HomeAdmin.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_paket"', 'APPPATH\\Controllers\\Admin\\HomeAdmin.php', 259)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket('20')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 05:47:39 --> Undefined array key "id_paket"
+in APPPATH\Controllers\Admin\HomeAdmin.php on line 259.
+ 1 APPPATH\Controllers\Admin\HomeAdmin.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_paket"', 'APPPATH\\Controllers\\Admin\\HomeAdmin.php', 259)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket('20')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 06:54:40 --> Undefined array key "id_paket"
+in APPPATH\Controllers\Admin\HomeAdmin.php on line 259.
+ 1 APPPATH\Controllers\Admin\HomeAdmin.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_paket"', 'APPPATH\\Controllers\\Admin\\HomeAdmin.php', 259)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket('20')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 06:56:15 --> Undefined array key "id_paket"
+in APPPATH\Controllers\Admin\HomeAdmin.php on line 259.
+ 1 APPPATH\Controllers\Admin\HomeAdmin.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_paket"', 'APPPATH\\Controllers\\Admin\\HomeAdmin.php', 259)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DaftarPaket('20')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 07:06:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 10.
+ 1 APPPATH\Views\admin\v_editpaketlayanan.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\v_editpaketlayanan.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editpaketlayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(367): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('6')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-30 07:06:49 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_editpaketlayanan.php on line 10.
+ 1 APPPATH\Views\admin\v_editpaketlayanan.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\v_editpaketlayanan.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editpaketlayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editpaketlayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editpaketlayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(367): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->EditPaket('6')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

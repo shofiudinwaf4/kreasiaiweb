@@ -1,0 +1,10 @@
+CRITICAL - 2022-08-26 01:16:30 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\Admin\HomeAdmin.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-08-26 03:57:43 --> Call to a member function getRandomName() on string
+in APPPATH\Controllers\Admin\HomeAdmin.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->Save()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

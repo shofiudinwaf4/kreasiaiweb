@@ -1,0 +1,117 @@
+CRITICAL - 2022-09-23 18:58:35 --> Undefined variable $layanan
+in APPPATH\Views\admin\v_editklien.php on line 32.
+ 1 APPPATH\Views\admin\v_editklien.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $layanan', 'APPPATH\\Views\\admin\\v_editklien.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_editklien.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_editklien', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_editklien')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\Klien.php(115): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->Editklien('1')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:00:49 --> Undefined property: App\Controllers\Admin\Klien::$LayananModel
+in APPPATH\Controllers\Admin\Klien.php on line 158.
+ 1 APPPATH\Controllers\Admin\Klien.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Klien::$LayananModel', 'APPPATH\\Controllers\\Admin\\Klien.php', 158)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->Update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:02:11 --> unlink(admin/uploads/logo ai studio 1.png): No such file or directory
+in APPPATH\Controllers\Admin\Klien.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(admin/uploads/logo ai studio 1.png): No such file or directory', 'APPPATH\\Controllers\\Admin\\Klien.php', 152)
+ 2 APPPATH\Controllers\Admin\Klien.php(152): unlink('admin/uploads/logo ai studio 1.png')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->Update('1')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:08:10 --> unlink(admin/uploads/logo ai studio 1.png): No such file or directory
+in APPPATH\Controllers\Admin\Klien.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(admin/uploads/logo ai studio 1.png): No such file or directory', 'APPPATH\\Controllers\\Admin\\Klien.php', 152)
+ 2 APPPATH\Controllers\Admin\Klien.php(152): unlink('admin/uploads/logo ai studio 1.png')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->Update('1')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:11:48 --> unlink(admin/uploads/logo ai studio 1.png): No such file or directory
+in APPPATH\Controllers\Admin\Klien.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(admin/uploads/logo ai studio 1.png): No such file or directory', 'APPPATH\\Controllers\\Admin\\Klien.php', 152)
+ 2 APPPATH\Controllers\Admin\Klien.php(152): unlink('admin/uploads/logo ai studio 1.png')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->Update('1')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:13:30 --> unlink(admin/uploads/logo ai studio 1.png): No such file or directory
+in APPPATH\Controllers\Admin\Klien.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(admin/uploads/logo ai studio 1.png): No such file or directory', 'APPPATH\\Controllers\\Admin\\Klien.php', 152)
+ 2 APPPATH\Controllers\Admin\Klien.php(152): unlink('admin/uploads/logo ai studio 1.png')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->Update('1')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:20:39 --> unlink(admin/uploads/logo ai studio 1.png): No such file or directory
+in APPPATH\Controllers\Admin\Klien.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(admin/uploads/logo ai studio 1.png): No such file or directory', 'APPPATH\\Controllers\\Admin\\Klien.php', 40)
+ 2 APPPATH\Controllers\Admin\Klien.php(40): unlink('admin/uploads/logo ai studio 1.png')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->DaftarKlien()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:21:38 --> Call to undefined method App\Models\KlienModel::search
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin\Klien.php(21): CodeIgniter\Model->__call('search', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->DaftarKlien()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:22:39 --> Call to undefined method App\Models\KlienModel::search
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin\Klien.php(21): CodeIgniter\Model->__call('search', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->DaftarKlien()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 19:24:25 --> Call to undefined method App\Models\KlienModel::search
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin\Klien.php(21): CodeIgniter\Model->__call('search', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Klien->DaftarKlien()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Klien))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-23 20:15:36 --> Undefined variable $key
+in APPPATH\Views\admin\v_galerilayanan.php on line 8.
+ 1 APPPATH\Views\admin\v_galerilayanan.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'APPPATH\\Views\\admin\\v_galerilayanan.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_galerilayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_galerilayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_galerilayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(205): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->GaleriLayanan('19')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

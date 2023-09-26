@@ -1,0 +1,616 @@
+CRITICAL - 2023-08-24 17:18:49 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1666937321_49727275b84b56dbe844.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1666937321_49727275b84b56dbe844.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1666937321_49727275b84b56dbe844.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:18:49 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663258205_70a2091b8000b12d0805.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663258205_70a2091b8000b12d0805.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663258205_70a2091b8000b12d0805.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:18:49 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/default.jpeg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/default.jpeg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/default.jpeg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:18:51 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663978445_4e0e07e5549e5779aaaa.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663978445_4e0e07e5549e5779aaaa.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663978445_4e0e07e5549e5779aaaa.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:18:51 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663978986_97ef46c6e034f73713ff.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663978986_97ef46c6e034f73713ff.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663978986_97ef46c6e034f73713ff.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:18:51 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663979004_eb8621845a6ba26b3f6e.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663979004_eb8621845a6ba26b3f6e.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663979004_eb8621845a6ba26b3f6e.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:18:51 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663979036_2ed6264f9d54e07a8d57.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663979036_2ed6264f9d54e07a8d57.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663979036_2ed6264f9d54e07a8d57.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:18:51 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663979059_64418fcf60bdd402994c.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663979059_64418fcf60bdd402994c.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663979059_64418fcf60bdd402994c.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:02 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663337577_19cec7d897f2969593df.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663337577_19cec7d897f2969593df.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663337577_19cec7d897f2969593df.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:02 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663337577_58d0cc63f07e7f576d51.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663337577_58d0cc63f07e7f576d51.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663337577_58d0cc63f07e7f576d51.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:02 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663337577_b91e03c080f30de15f85.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663337577_b91e03c080f30de15f85.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663337577_b91e03c080f30de15f85.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:02 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663337577_7eb05fcff4beac54df6e.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663337577_7eb05fcff4beac54df6e.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663337577_7eb05fcff4beac54df6e.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:02 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663337577_61672d4417093380d00c.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663337577_61672d4417093380d00c.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663337577_61672d4417093380d00c.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:30 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Admin.php on line 73.
+ 1 APPPATH\Controllers\Admin\Admin.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Admin\\Admin.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Admin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Admin.php on line 73.
+ 1 APPPATH\Controllers\Admin\Admin.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Admin\\Admin.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Admin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:54 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:54 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:54 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:59 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:59 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:19:59 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:03 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:03 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:03 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:07 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:07 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:07 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:13 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:14 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:14 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:17 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:17 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:17 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:21 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:21 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:21 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:26 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:26 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:26 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:31 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'HomeAdmin', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('HomeAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('HomeAdmin')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:34 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:34 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:34 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_detaillayanan.php on line 5.
+ 1 APPPATH\Views\admin\v_detaillayanan.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\v_detaillayanan.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\v_detaillayanan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/v_detaillayanan', [], true)
+ 5 APPPATH\Views\layoutAdmin\v_content.php(4): view('admin/v_detaillayanan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_content.php', [], true)
+ 9 APPPATH\Views\layoutAdmin\v_wrapper.php(5): view('layoutAdmin/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutAdmin\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutAdmin/v_wrapper', [], true)
+13 APPPATH\Controllers\Admin\HomeAdmin.php(83): view('layoutAdmin/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\HomeAdmin->DetailLayanan('index3.html')
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HomeAdmin))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:37 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:37 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:37 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:49 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user1-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user1-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:49 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user8-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user8-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:20:49 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'homeadmin/detaillayanan/dist/img/user3-128x128.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('homeadmin/detaillayanan/dist/img/user3-128x128.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:21:09 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1666937321_49727275b84b56dbe844.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1666937321_49727275b84b56dbe844.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1666937321_49727275b84b56dbe844.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:21:09 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663258205_70a2091b8000b12d0805.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663258205_70a2091b8000b12d0805.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663258205_70a2091b8000b12d0805.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:21:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/default.jpeg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/default.jpeg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/default.jpeg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:21:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663978445_4e0e07e5549e5779aaaa.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663978445_4e0e07e5549e5779aaaa.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663978445_4e0e07e5549e5779aaaa.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:21:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663978986_97ef46c6e034f73713ff.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663978986_97ef46c6e034f73713ff.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663978986_97ef46c6e034f73713ff.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:21:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663979004_eb8621845a6ba26b3f6e.png', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663979004_eb8621845a6ba26b3f6e.png')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663979004_eb8621845a6ba26b3f6e.png')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:21:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663979036_2ed6264f9d54e07a8d57.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663979036_2ed6264f9d54e07a8d57.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663979036_2ed6264f9d54e07a8d57.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 17:21:10 --> preg_match(): Compilation failed: unmatched closing parenthesis at offset 25
+in SYSTEMPATH\Router\Router.php on line 418.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: unmatched closing parenthesis at offset 25', 'SYSTEMPATH\\Router\\Router.php', 418)
+ 2 SYSTEMPATH\Router\Router.php(418): preg_match('#^setting/updatePerusahaan)$#u', 'admin/uploads/1663979059_64418fcf60bdd402994c.jpg', [])
+ 3 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/uploads/1663979059_64418fcf60bdd402994c.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/uploads/1663979059_64418fcf60bdd402994c.jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

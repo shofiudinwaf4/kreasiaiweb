@@ -1,0 +1,102 @@
+ERROR - 2022-12-12 18:38:19 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#5 C:\xampp\htdocs\kreasiaiweb\app\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+#6 C:\xampp\htdocs\kreasiaiweb\app\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+#7 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-12-12 18:38:19 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `layanan`', [], false)
+ 3 SYSTEMPATH\Model.php(184): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(false, null)
+ 5 APPPATH\Models\LayananModel.php(19): CodeIgniter\BaseModel->find()
+ 6 APPPATH\Controllers\Home.php(21): App\Models\LayananModel->getLayanan()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-12 19:12:37 --> Undefined variable $klien
+in APPPATH\Views\user\v_home.php on line 696.
+ 1 APPPATH\Views\user\v_home.php(696): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $klien', 'APPPATH\\Views\\user\\v_home.php', 696)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/v_home', [], true)
+ 5 APPPATH\Views\layoutUser\v_content.php(4): view('user/v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_content.php', [], true)
+ 9 APPPATH\Views\layoutUser\v_wrapper.php(4): view('layoutUser/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_wrapper', [], true)
+13 APPPATH\Controllers\Home.php(25): view('layoutUser/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-12 19:13:09 --> Undefined variable $klien
+in APPPATH\Views\user\v_home.php on line 696.
+ 1 APPPATH\Views\user\v_home.php(696): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $klien', 'APPPATH\\Views\\user\\v_home.php', 696)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/v_home', [], true)
+ 5 APPPATH\Views\layoutUser\v_content.php(4): view('user/v_home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_content.php', [], true)
+ 9 APPPATH\Views\layoutUser\v_wrapper.php(4): view('layoutUser/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_wrapper', [], true)
+13 APPPATH\Controllers\Home.php(25): view('layoutUser/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-12 19:16:29 --> Undefined property: App\Controllers\Home::$KlienModel
+in APPPATH\Controllers\Home.php on line 23.
+ 1 APPPATH\Controllers\Home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$KlienModel', 'APPPATH\\Controllers\\Home.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-12 19:17:02 --> Class "APP\Models\KlienModel" not found
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
