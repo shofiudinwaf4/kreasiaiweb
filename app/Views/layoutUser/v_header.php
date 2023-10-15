@@ -15,8 +15,8 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="<?php base_url('home') ?>">Home</a></li>
-                    <li><a class="nav-link scrollto" href="<?php base_url('tentang_kami') ?>">Tentang Kami</a></li>
-                    <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
+                    <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
+                    <li class="dropdown"><a href="#services"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <?php foreach ($layanan as $key => $l) { ?>
                                 <li><a href="<?= base_url('layanan/' . $l['id_layanan']) ?>"><?= $l['nama_layanan']; ?></a></li>
@@ -24,7 +24,7 @@
 
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
                     <li><a class="getstarted scrollto" href="https://www.instagram.com/kreasiai.idn/">Portofolio</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
