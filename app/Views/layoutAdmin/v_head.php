@@ -20,12 +20,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="<?= base_url() ?>/adminLTE/template/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url() ?>/adminLTE/template/dist/css/adminlte.min.css">
+    <!-- font awesome icon picker -->
+    <link rel="stylesheet" href="<?= base_url() ?>/IconPicker-main/dist/fontawesome-5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="<?= base_url() ?>/IconPicker-main/dist/iconpicker-1.5.0.css" />
+    <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
 
     <style>
         .ck-editor__editable {
             min-height: 400px;
         }
     </style>
+
 </head>
 
 <body class="hold-transition sidebar-mini">

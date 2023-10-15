@@ -77,8 +77,12 @@ $routes->group('klien', ['filter' => 'auth'], function ($routes) {
 });
 $routes->group('setting', ['filter' => 'auth'], function ($routes) {
     $routes->add('perusahaan', 'Admin\Setting::Perusahaan');
-    $routes->add('editPerusahaan/(:segment)', 'Admin\Setting::EditPerusahaan/$1');
-    $routes->add('updatePerusahaan)', 'Admin\Setting::UpdatePerusahaan');
+    $routes->add('sosmed', 'Admin\Setting::Sosmed');
+    $routes->add('tambahSosmed', 'Admin\Setting::TambahSosmed');
+    $routes->add('editsosmed/(:segment)', 'Admin\Setting::EditSosmed/$1');
+    $routes->add('updatesosmed/(:segment)', 'Admin\Setting::UpdateSosmed/$1');
+    $routes->add('deletesosmed/(:segment)', 'Admin\Setting::DeleteSosmed/$1');
+    $routes->add('savesosmed', 'Admin\Setting::SaveSosmed');
 });
 /*
  * --------------------------------------------------------------------

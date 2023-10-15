@@ -33,18 +33,21 @@ class Klien extends BaseController
             'isi' => 'admin/v_klien',
             'menu' => 'klien',
             'submenu' => 'daftar_klien',
+            'judul' => 'Klien',
+            'subjudul' => 'Daftar Klien',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'layanan' => $this->LayananModel->findAll(),
             'klien' => $this->KlienModel->paginate(5, 'klien'),
             'pager' => $this->KlienModel->pager,
-            'currentPage' => $currentPage
+            'currentPage' => $currentPage,
+            'layanan' => $this->LayananModel->findAll(),
         ];
         if ($this->request->getVar('aksi') == 'hapus' && $this->request->getVar('id_klien')) {
             $dataPost = $this->KlienModel->getKlien($this->request->getVar('id_klien'));
             if ($dataPost['id_klien']) { #memastikan bahwa ada data di folder uploads
                 if ($dataPost['logo_klien'] != 'default.jpeg') {
 
-                    unlink("admin/uploads/" . $dataPost['logo_klien']);
+                    unlink("uploads/" . $dataPost['logo_klien']);
                 }
                 $this->KlienModel->Delete_klien($this->request->getVar('id_klien'));
             }
@@ -60,11 +63,14 @@ class Klien extends BaseController
         $data = [
             'title' => 'Tambah Klien',
             'isi' => 'admin/v_tambahklien',
+            'judul' => 'Klien',
+            'subjudul' => 'Tambah Klien',
             'menu' => 'klien',
             'submenu' => 'tambah_klien',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
-            'klien' => $this->KlienModel->getklien()
+            'klien' => $this->KlienModel->getklien(),
+            'layanan' => $this->LayananModel->findAll(),
         ];
         return view('layoutAdmin/v_wrapper', $data);
     }
@@ -115,11 +121,14 @@ class Klien extends BaseController
         $data = [
             'title' => 'Edit Klien',
             'isi' => 'admin/v_editklien',
+            'judul' => 'Klient',
+            'subjudul' => 'Edit Klien',
             'menu' => 'klien',
             'submenu' => 'edit_klien',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
-            'klien' => $this->KlienModel->getKlien($id)
+            'klien' => $this->KlienModel->getKlien($id),
+            'layanan' => $this->LayananModel->findAll(),
         ];
         return view('layoutAdmin/v_wrapper', $data);
     }

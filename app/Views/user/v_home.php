@@ -1,817 +1,511 @@
-<!-- Start Home Page Slider -->
-<section id="page-top">
-    <!-- Carousel -->
-    <div id="main-slide" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#main-slide" data-slide-to="0" class="active"></li>
-            <li data-target="#main-slide" data-slide-to="1"></li>
-            <li data-target="#main-slide" data-slide-to="2"></li>
-        </ol>
-        <!--/ Indicators end-->
-
-        <!-- Carousel inner -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img class="img-responsive" src="<?= base_url() ?>/fame-main/images/header-bg-1.jpg" alt="slider">
-                <div class="slider-content">
-                    <div class="col-md-12 text-center">
-                        <h1 class="animated3">
-                            <span><strong>Kreasi AI</strong> for the highest</span>
-                        </h1>
-                        <p class="animated2">At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium voluptatum</p>
-                        <a href="#feature" class="page-scroll btn btn-primary animated1">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!--/ Carousel item end -->
-
-            <div class="item">
-                <img class="img-responsive" src="<?= base_url() ?>/fame-main/images/header-back.png" alt="slider">
-
-                <div class="slider-content">
-                    <div class="col-md-12 text-center">
-                        <h1 class="animated1">
-                            <span><?php echo $title ?></span>
-                        </h1>
-                        <p class="animated2"><?= $stlayanan; ?></p>
-                        <a href="#feature" class="page-scroll btn btn-primary animated3">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!--/ Carousel item end -->
-
-            <div class="item">
-                <img class="img-responsive" src="<?= base_url() ?>/fame-main/images//galaxy.jpg" alt="slider">
-                <div class="slider-content">
-                    <div class="col-md-12 text-center">
-                        <h1 class="animated2">
-                            <span>The way of <strong>Success</strong></span>
-                        </h1>
-                        <p class="animated1">At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium voluptatum</p>
-                        <a class="animated3 slider btn btn-primary btn-min-block" href="#">Get Now</a><a class="animated3 slider btn btn-default btn-min-block" href="#">Live Demo</a>
-
-                    </div>
-                </div>
-            </div>
-            <!--/ Carousel item end -->
-        </div>
-        <!-- Carousel inner end-->
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#main-slide" data-slide="prev">
-            <span><i class="fa fa-angle-left"></i></span>
-        </a>
-        <a class="right carousel-control" href="#main-slide" data-slide="next">
-            <span><i class="fa fa-angle-right"></i></span>
-        </a>
-    </div>
-    <!-- /carousel -->
-</section>
-<!-- End Home Page Slider -->
-
-
-
-<!-- Start Feature Section -->
-<!-- <section id="feature" class="feature-section"> -->
-<!-- <div class="container">
-        <div class="row">
-            <?php //foreach ($layanan as $key) : 
-            ?>
-                <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                    <div class="feature position-relative">
-                        <img style='width:50px;' src="/admin/uploads/<? //= $key['gambar_layanan']; 
-                                                                        ?>" alt="" class="fa">
-                        <div class="feature-content">
-                            <h4><? //= $key['nama_layanan']; 
-                                ?></h4>
-                            <p><? //= $key['deskripsi_layanan']; 
-                                ?></p>
-                        </div>
-                    </div>
-                </div>
-            <?php //endforeach; 
-            ?> -->
-<!-- /.col-md-3 -->
-<!-- <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="feature">
-                    <i class="fa fa-gift"></i>
-                    <div class="feature-content">
-                        <h4>Graphics Design</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                    </div>
-                </div>
-            </div> -->
-<!-- /.col-md-3 -->
-<!-- <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="feature">
-                    <i class="fa fa-wordpress"></i>
-                    <div class="feature-content">
-                        <h4>Wordpress Theme</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                    </div>
-                </div>
-            </div> -->
-<!-- /.col-md-3 -->
-<!-- <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="feature">
-                    <i class="fa fa-plug"></i>
-                    <div class="feature-content">
-                        <h4>Wordpress Plugin</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
-                    </div>
-                </div>
-            </div> -->
-<!-- </div>/.row -->
-
-<!-- </div>/.container -->
-<!-- </section> -->
-<!-- End Feature Section -->
-
-<!-- Start Feature Section -->
-<section id="service" class="services-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    <h3>Layanan Kami</h3>
-                    <p>Berikut adalah layanan yang kami berikan:</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <?php foreach ($layanan as $key) : ?>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="feature-2">
-                        <a href="<?= base_url('layanan/' . $key['id_layanan']) ?>">
-                            <div class="media">
-                                <div class="pull-left">
-                                    <i><img style='width:50px;' src="/admin/uploads/<?= $key['gambar_layanan']; ?>"></i>
-                                    <div class="border"></div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading"><?= $key['nama_layanan']; ?></h4>
-                                    <p><?= $key['deskripsi_layanan']; ?></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            <!-- /.col-md-4 -->
-            <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="feature-2">
-                                            <div class="media">
-                                                <div class="pull-left">
-                                                    <i class="fa fa-css3"></i>
-                                                    <div class="border"></div>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">HTML5 & CSS3</h4>
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                                                </div>
-                                            </div>
-                                        </div> -->
-            <!-- </div>/.col-md-4 -->
-            <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="feature-2">
-                                            <div class="media">
-                                                <div class="pull-left">
-                                                    <i class="fa fa-wordpress"></i>
-                                                    <div class="border"></div>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Wordpress Theme</h4>
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>/.col-md-4 -->
-            <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="feature-2">
-                                            <div class="media">
-                                                <div class="pull-left">
-                                                    <i class="fa fa-plug"></i>
-                                                    <div class="border"></div>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Wordpress Plugin</h4>
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>/.col-md-4 -->
-            <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="feature-2">
-                                            <div class="media">
-                                                <div class="pull-left">
-                                                    <i class="fa fa-joomla"></i>
-                                                    <div class="border"></div>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Joomla Template</h4>
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>/.col-md-4 -->
-            <!-- <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="feature-2">
-                                            <div class="media">
-                                                <div class="pull-left">
-                                                    <i class="fa fa-cube"></i>
-                                                    <div class="border"></div>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading">Joomla Extension</h4>
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>/.col-md-4 -->
-
-        </div><!-- /.row -->
-
-    </div><!-- /.container -->
-</section>
-<!-- End Feature Section -->
-
-<!-- Start Call to Action Section -->
-<!-- <section class="call-to-action">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Libero tempore soluta nobis est eligendi</br> optio cumque nihil impedit minus id quod maxime </br>placeat facere possimus, omnis voluptas assumenda est</h1>
-                <button type="submit" class="btn btn-primary">Buy This Template</button>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- End Call to Action Section -->
-
-
-
-<!-- Start Portfolio Section -->
-<section id="portfolio" class="portfolio-section-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    <h3>Our Portfolio</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-
-                <!-- Start Portfolio items -->
-                <ul id="portfolio-list">
-                    <li>
-                        <div class="portfolio-item">
-                            <img src="<?= base_url() ?>/fame-main/images/portfolio/img1.jpg" class="img-responsive" alt="" />
-                            <div class="portfolio-caption">
-                                <h4>Portfolio Title</h4>
-                                <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="portfolio-item">
-                            <img src="<?= base_url() ?>/fame-main/images/portfolio/img2.jpg" class="img-responsive" alt="" />
-                            <div class="portfolio-caption">
-                                <h4>Portfolio Title</h4>
-                                <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="portfolio-item">
-                            <img src="<?= base_url() ?>/fame-main/images/portfolio/img3.jpg" class="img-responsive" alt="" />
-                            <div class="portfolio-caption">
-                                <h4>Portfolio Title</h4>
-                                <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="portfolio-item">
-                            <img src="<?= base_url() ?>/fame-main/images/portfolio/img4.jpg" class="img-responsive" alt="" />
-                            <div class="portfolio-caption">
-                                <h4>Portfolio Title</h4>
-                                <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="portfolio-item">
-                            <img src="<?= base_url() ?>/fame-main/images/portfolio/img5.jpg" class="img-responsive" alt="" />
-                            <div class="portfolio-caption">
-                                <h4>Portfolio Title</h4>
-                                <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="portfolio-item">
-                            <img src="<?= base_url() ?>/fame-main/images/portfolio/img6.jpg" class="img-responsive" alt="" />
-                            <div class="portfolio-caption">
-                                <h4>Portfolio Title</h4>
-                                <a href="#portfolio-modal" data-toggle="modal" class="link-1"><i class="fa fa-magic"></i></a>
-                                <a href="#" class="link-2"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </li>
-
-
-                </ul>
-                <!-- End Portfolio items -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Portfolio Section -->
-
-<!-- Start Portfolio Modal Section -->
-<div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="section-title text-center">
-                    <h3>Portfolio Details</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-md-6">
-                    <img src="<?= base_url() ?>/fame-main/images/portfolio/img1.jpg" class="img-responsive" alt="..">
-                </div>
-                <div class="col-md-6">
-                    <img src="<?= base_url() ?>/fame-main/images/portfolio/img1.jpg" class="img-responsive" alt="..">
-                </div>
-
-            </div><!-- /.row -->
-        </div>
-    </div>
-</div>
-<!-- End Portfolio Modal Section -->
-
-
-<!-- Start About Us Section -->
-<section id="about-us" class="about-us-section-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="section-title text-center">
-                    <h3>About Us</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="welcome-section text-center">
-                    <img src="<?= base_url() ?>/fame-main/images/about-01.jpg" class="img-responsive" alt="..">
-                    <h4>Office Philosophy</h4>
-                    <div class="border"></div>
-                    <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="welcome-section text-center">
-                    <img src="<?= base_url() ?>/fame-main/images/about-02.jpg" class="img-responsive" alt="..">
-                    <h4>Office Mission & Vission</h4>
-                    <div class="border"></div>
-                    <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="welcome-section text-center">
-                    <img src="<?= base_url() ?>/fame-main/images/about-03.jpg" class="img-responsive" alt="..">
-                    <h4>Office Value & Rules</h4>
-                    <div class="border"></div>
-                    <p>Duis aute irure dolor in reprehen derit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem reprehenderit</p>
-                </div>
-            </div>
-
-        </div><!-- /.row -->
-
-    </div><!-- /.container -->
-</section>
-<!-- End About Us Section -->
-
-
-<!-- Start Team Member Section -->
-<section id="team" class="team-member-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="section-title text-center">
-                    <h3>Our Team</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div id="team-section">
-
-                    <div class="our-team">
-
-                        <div class="team-member">
-                            <img src="<?= base_url() ?>/fame-main/images/team/manage-1.png" class="img-responsive" alt="">
-                            <div class="team-details">
-                                <h4>John Doe</h4>
-                                <p>Founder & Director</p>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="<?= base_url() ?>/fame-main/images/team/manage-2.png" class="img-responsive" alt="">
-                            <div class="team-details">
-                                <h4>John Doe</h4>
-                                <p>Founder & Director</p>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="<?= base_url() ?>/fame-main/images/team/manage-3.png" class="img-responsive" alt="">
-                            <div class="team-details">
-                                <h4>John Doe</h4>
-                                <p>Founder & Director</p>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="<?= base_url() ?>/fame-main/images/team/manage-4.png" class="img-responsive" alt="">
-                            <div class="team-details">
-                                <h4>John Doe</h4>
-                                <p>Founder & Director</p>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="<?= base_url() ?>/fame-main/images/team/manage-1.png" class="img-responsive" alt="">
-                            <div class="team-details">
-                                <h4>John Doe</h4>
-                                <p>Founder & Director</p>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="<?= base_url() ?>/fame-main/images/team/manage-2.png" class="img-responsive" alt="">
-                            <div class="team-details">
-                                <h4>John Doe</h4>
-                                <p>Founder & Director</p>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- End Team Member Section -->
-
-
-<!-- Start Latest News Section -->
-<section id="latest-news" class="latest-news-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    <h3>Latest News</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="latest-news">
-                <div class="col-md-12">
-                    <div class="latest-post">
-                        <img src="<?= base_url() ?>/fame-main/images/about-01.jpg" class="img-responsive" alt="">
-                        <h4><a href="#">Standard Post with Image</a></h4>
-                        <div class="post-details">
-                            <span class="date"><strong>31</strong> <br>Dec , 2014</span>
-
-                        </div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="latest-post">
-                        <img src="<?= base_url() ?>/fame-main/images/about-02.jpg" class="img-responsive" alt="">
-                        <h4><a href="#">Standard Post with Image</a></h4>
-                        <div class="post-details">
-                            <span class="date"><strong>17</strong> <br>Feb , 2014</span>
-
-                        </div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="latest-post">
-                        <img src="<?= base_url() ?>/fame-main/images/about-03.jpg" class="img-responsive" alt="">
-                        <h4><a href="#">Standard Post with Image</a></h4>
-                        <div class="post-details">
-                            <span class="date"><strong>08</strong> <br>Aug , 2014</span>
-
-                        </div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="latest-post">
-                        <img src="<?= base_url() ?>/fame-main/images/about-01.jpg" class="img-responsive" alt="">
-                        <h4><a href="#">Standard Post with Image</a></h4>
-                        <div class="post-details">
-                            <span class="date"><strong>08</strong> <br>Aug , 2014</span>
-
-                        </div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="latest-post">
-                        <img src="<?= base_url() ?>/fame-main/images/about-02.jpg" class="img-responsive" alt="">
-                        <h4><a href="#">Standard Post with Image</a></h4>
-                        <div class="post-details">
-                            <span class="date"><strong>08</strong> <br>Aug , 2014</span>
-
-                        </div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="latest-post">
-                        <img src="<?= base_url() ?>/fame-main/images/about-03.jpg" class="img-responsive" alt="">
-                        <h4><a href="#">Standard Post with Image</a></h4>
-                        <div class="post-details">
-                            <span class="date"><strong>08</strong> <br>Aug , 2014</span>
-
-                        </div>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Latest News Section -->
-
-
-
-
-
-
-<!-- Start Testimonial Section -->
-<div id="testimonial" class="testimonial-section">
-    <div class="container">
-        <!-- Start Testimonials Carousel -->
-        <div id="testimonial-carousel" class="testimonials-carousel">
-            <!-- Testimonial 1 -->
-            <div class="testimonials item">
-                <div class="testimonial-content">
-                    <img src="<?= base_url() ?>/fame-main/images/testimonial/face_1.png" alt="">
-                    <div class="testimonial-author">
-                        <div class="author">John Doe</div>
-                        <div class="designation">Organization Founder</div>
-                    </div>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br> laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                </div>
-            </div>
-            <!-- Testimonial 2 -->
-            <div class="testimonials item">
-                <div class="testimonial-content">
-                    <img src="<?= base_url() ?>/fame-main/images/testimonial/face_2.png" alt="">
-                    <div class="testimonial-author">
-                        <div class="author">Jane Doe</div>
-                        <div class="designation">Lead Developer</div>
-                    </div>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia<br> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                </div>
-            </div>
-            <!-- Testimonial 3 -->
-            <div class="testimonials item">
-                <div class="testimonial-content">
-                    <img src="<?= base_url() ?>/fame-main/images/testimonial/face_3.png" alt="">
-                    <div class="testimonial-author">
-                        <div class="author">John Doe</div>
-                        <div class="designation">Honorable Customer</div>
-                    </div>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit<br> anim laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-        <!-- End Testimonials Carousel -->
-    </div>
-</div>
-<!-- End Testimonial Section -->
-
-
-
-<!-- Clients Aside -->
-<section id="partner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    <h3>Klien Kita</h3>
-                    <p>Berikut beberapa klien yang pernah menggunakan jasa kami:</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="clients">
-
-                <div class="col-md-12">
-                    <?php foreach ($klien as $kk) : ?>
-                        <img src="/admin/uploads/<?= $kk['logo_klien']; ?>" class="img-responsive" alt="...">
-                    <?php endforeach; ?>
-                    <!-- <img src="<?= base_url() ?>/fame-main/images/logos/themeforest.jpg" class="img-responsive" alt="..."> -->
-                </div>
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/creative-market.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/designmodo.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/creative-market.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/microlancer.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/themeforest.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/microlancer.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/designmodo.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/creative-market.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-                <!-- <div class="col-md-12">
-                    <img src="<?= base_url() ?>/fame-main/images/logos/designmodo.jpg" class="img-responsive" alt="...">
-                </div> -->
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center">
-                    <h3>Contact With Us</h3>
-                    <p class="white-text">Duis aute irure dolor in reprehenderit in voluptate</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="footer-contact-info">
-                    <h4>Contact info</h4>
-                    <ul>
-                        <li><strong>E-mail :</strong> your-email@mail.com</li>
-                        <li><strong>Phone :</strong> +8801-6778776</li>
-                        <li><strong>Mobile :</strong> +8801-45565378</li>
-                        <li><strong>Web :</strong> yourdomain.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-                <div class="footer-contact-info">
-                    <h4>Working Hours</h4>
-                    <ul>
-                        <li><strong>Mon-Wed :</strong> 9 am to 5 pm</li>
-                        <li><strong>Thurs-Fri :</strong> 12 pm to 10 pm</li>
-                        <li><strong>Sat :</strong> 9 am to 3 pm</li>
-                        <li><strong>Sunday :</strong> Closed</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex align-items-center">
+
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                 <h1>Better Solutions For Your Business</h1>
+                 <h2>We are team of talented designers making websites with Bootstrap</h2>
+                 <div class="d-flex justify-content-center justify-content-lg-start">
+                     <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                     <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                 </div>
+             </div>
+             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                 <img src="<?= base_url('arsha'); ?>/assets/img/hero-img.png" class="img-fluid animated" alt="">
+             </div>
+         </div>
+     </div>
+
+ </section><!-- End Hero -->
+
+
+ <main id="main">
+
+     <!-- ======= Cliens Section ======= -->
+     <section id="cliens" class="cliens section-bg">
+         <div class="container">
+
+             <div class="row" data-aos="zoom-in">
+
+                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-1.png" class="img-fluid" alt="">
+                 </div>
+
+                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-2.png" class="img-fluid" alt="">
+                 </div>
+
+                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-3.png" class="img-fluid" alt="">
+                 </div>
+
+                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-4.png" class="img-fluid" alt="">
+                 </div>
+
+                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-5.png" class="img-fluid" alt="">
+                 </div>
+
+                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-6.png" class="img-fluid" alt="">
+                 </div>
+
+             </div>
+
+         </div>
+     </section><!-- End Cliens Section -->
+
+     <!-- ======= About Us Section ======= -->
+     <section id="about" class="about">
+         <div class="container" data-aos="fade-up">
+
+             <div class="section-title">
+                 <h2>Tentang Kami</h2>
+             </div>
+
+             <div class="row content">
+                 <div class="col-lg-6">
+                     <p>
+                         <?= $perusahaan['tentang_kami']; ?>
+                     </p>
+
+                 </div>
+             </div>
+
+         </div>
+     </section><!-- End About Us Section -->
+
+     <!-- ======= Services Section ======= -->
+     <section id="services" class="services section-bg">
+         <div class="container" data-aos="fade-up">
+
+             <div class="section-title">
+                 <h2>Layanan Kami</h2>
+                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+             </div>
+             <div class="row">
+                 <?php foreach ($layanan as $key => $layanan) { ?>
+                     <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                         <div class="icon-box">
+                             <div class="icon"><i class="<?= $layanan['gambar_layanan']; ?>"></i></div>
+                             <h4><a href="<?= base_url('layanan/' . $layanan['id_layanan']) ?>"><?= $layanan['nama_layanan']; ?></a></h4>
+                             <p><?= $layanan['deskripsi_layanan']; ?></p>
+                         </div>
+                     </div>
+                 <?php } ?>
+
+             </div>
+
+         </div>
+     </section><!-- End Services Section -->
+
+     <!-- ======= Cta Section ======= -->
+     <section id="cta" class="cta">
+         <div class="container" data-aos="zoom-in">
+
+             <div class="row">
+                 <div class="col-lg-9 text-center text-lg-start">
+                     <h3>Call To Action</h3>
+                     <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 </div>
+                 <div class="col-lg-3 cta-btn-container text-center">
+                     <a class="cta-btn align-middle" href="#">Call To Action</a>
+                 </div>
+             </div>
+
+         </div>
+     </section><!-- End Cta Section -->
+
+     <!-- ======= Portfolio Section ======= -->
+     <section id="portfolio" class="portfolio">
+         <div class="container" data-aos="fade-up">
+
+             <div class="section-title">
+                 <h2>Portfolio</h2>
+                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+             </div>
+
+             <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                 <li data-filter="*" class="filter-active">All</li>
+                 <li data-filter=".filter-app">App</li>
+                 <li data-filter=".filter-card">Card</li>
+                 <li data-filter=".filter-web">Web</li>
+             </ul>
+
+             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>App 1</h4>
+                         <p>App</p>
+                         <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>Web 3</h4>
+                         <p>Web</p>
+                         <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>App 2</h4>
+                         <p>App</p>
+                         <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>Card 2</h4>
+                         <p>Card</p>
+                         <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>Web 2</h4>
+                         <p>Web</p>
+                         <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>App 3</h4>
+                         <p>App</p>
+                         <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>Card 1</h4>
+                         <p>Card</p>
+                         <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>Card 3</h4>
+                         <p>Card</p>
+                         <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                     <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+                     <div class="portfolio-info">
+                         <h4>Web 3</h4>
+                         <p>Web</p>
+                         <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                         <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                     </div>
+                 </div>
+
+             </div>
+
+         </div>
+     </section><!-- End Portfolio Section -->
+
+     <!-- ======= Team Section ======= -->
+     <section id="team" class="team section-bg">
+         <div class="container" data-aos="fade-up">
+
+             <div class="section-title">
+                 <h2>Team</h2>
+                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+             </div>
+
+             <div class="row">
+
+                 <div class="col-lg-6">
+                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                         <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                         <div class="member-info">
+                             <h4>Walter White</h4>
+                             <span>Chief Executive Officer</span>
+                             <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                             <div class="social">
+                                 <a href=""><i class="ri-twitter-fill"></i></a>
+                                 <a href=""><i class="ri-facebook-fill"></i></a>
+                                 <a href=""><i class="ri-instagram-fill"></i></a>
+                                 <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-6 mt-4 mt-lg-0">
+                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                         <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                         <div class="member-info">
+                             <h4>Sarah Jhonson</h4>
+                             <span>Product Manager</span>
+                             <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                             <div class="social">
+                                 <a href=""><i class="ri-twitter-fill"></i></a>
+                                 <a href=""><i class="ri-facebook-fill"></i></a>
+                                 <a href=""><i class="ri-instagram-fill"></i></a>
+                                 <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-6 mt-4">
+                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+                         <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+                         <div class="member-info">
+                             <h4>William Anderson</h4>
+                             <span>CTO</span>
+                             <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                             <div class="social">
+                                 <a href=""><i class="ri-twitter-fill"></i></a>
+                                 <a href=""><i class="ri-facebook-fill"></i></a>
+                                 <a href=""><i class="ri-instagram-fill"></i></a>
+                                 <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-6 mt-4">
+                     <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+                         <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+                         <div class="member-info">
+                             <h4>Amanda Jepson</h4>
+                             <span>Accountant</span>
+                             <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                             <div class="social">
+                                 <a href=""><i class="ri-twitter-fill"></i></a>
+                                 <a href=""><i class="ri-facebook-fill"></i></a>
+                                 <a href=""><i class="ri-instagram-fill"></i></a>
+                                 <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+             </div>
+
+         </div>
+     </section><!-- End Team Section -->
+
+     <!-- ======= Pricing Section ======= -->
+     <section id="pricing" class="pricing">
+         <div class="container" data-aos="fade-up">
+
+             <div class="section-title">
+                 <h2>Pricing</h2>
+                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+             </div>
+
+             <div class="row">
+
+                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                     <div class="box">
+                         <h3>Free Plan</h3>
+                         <h4><sup>$</sup>0<span>per month</span></h4>
+                         <ul>
+                             <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                             <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                             <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                             <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                             <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                         </ul>
+                         <a href="#" class="buy-btn">Get Started</a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                     <div class="box featured">
+                         <h3>Business Plan</h3>
+                         <h4><sup>$</sup>29<span>per month</span></h4>
+                         <ul>
+                             <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                             <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                             <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                             <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                             <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                         </ul>
+                         <a href="#" class="buy-btn">Get Started</a>
+                     </div>
+                 </div>
+
+                 <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                     <div class="box">
+                         <h3>Developer Plan</h3>
+                         <h4><sup>$</sup>49<span>per month</span></h4>
+                         <ul>
+                             <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                             <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                             <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                             <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                             <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+                         </ul>
+                         <a href="#" class="buy-btn">Get Started</a>
+                     </div>
+                 </div>
+
+             </div>
+
+         </div>
+     </section><!-- End Pricing Section -->
+
+     <!-- ======= Frequently Asked Questions Section ======= -->
+     <section id="faq" class="faq section-bg">
+         <div class="container" data-aos="fade-up">
+
+             <div class="section-title">
+                 <h2>Frequently Asked Questions</h2>
+                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+             </div>
+
+             <div class="faq-list">
+                 <ul>
+                     <li data-aos="fade-up" data-aos-delay="100">
+                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                         <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                             <p>
+                                 Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                             </p>
+                         </div>
+                     </li>
+
+                     <li data-aos="fade-up" data-aos-delay="200">
+                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                         <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                             <p>
+                                 Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                             </p>
+                         </div>
+                     </li>
+
+                     <li data-aos="fade-up" data-aos-delay="300">
+                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                         <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                             <p>
+                                 Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                             </p>
+                         </div>
+                     </li>
+
+                     <li data-aos="fade-up" data-aos-delay="400">
+                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                         <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                             <p>
+                                 Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                             </p>
+                         </div>
+                     </li>
+
+                     <li data-aos="fade-up" data-aos-delay="500">
+                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                         <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                             <p>
+                                 Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                             </p>
+                         </div>
+                     </li>
+
+                 </ul>
+             </div>
+
+         </div>
+     </section><!-- End Frequently Asked Questions Section -->
+
+     <!-- ======= Contact Section ======= -->
+     <section id="contact" class="contact">
+         <div class="container" data-aos="fade-up">
+
+             <div class="section-title">
+                 <h2>Contact</h2>
+                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+             </div>
+
+             <div class="row">
+
+                 <div class="col-lg-5 d-flex align-items-stretch">
+                     <div class="info">
+                         <div class="address">
+                             <i class="bi bi-geo-alt"></i>
+                             <h4>Location:</h4>
+                             <p>A108 Adam Street, New York, NY 535022</p>
+                         </div>
+
+                         <div class="email">
+                             <i class="bi bi-envelope"></i>
+                             <h4>Email:</h4>
+                             <p>info@example.com</p>
+                         </div>
+
+                         <div class="phone">
+                             <i class="bi bi-phone"></i>
+                             <h4>Call:</h4>
+                             <p>+1 5589 55488 55s</p>
+                         </div>
+
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                     </div>
+
+                 </div>
+
+                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                         <div class="row">
+                             <div class="form-group col-md-6">
+                                 <label for="name">Your Name</label>
+                                 <input type="text" name="name" class="form-control" id="name" required>
+                             </div>
+                             <div class="form-group col-md-6">
+                                 <label for="name">Your Email</label>
+                                 <input type="email" class="form-control" name="email" id="email" required>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <label for="name">Subject</label>
+                             <input type="text" class="form-control" name="subject" id="subject" required>
+                         </div>
+                         <div class="form-group">
+                             <label for="name">Message</label>
+                             <textarea class="form-control" name="message" rows="10" required></textarea>
+                         </div>
+                         <div class="my-3">
+                             <div class="loading">Loading</div>
+                             <div class="error-message"></div>
+                             <div class="sent-message">Your message has been sent. Thank you!</div>
+                         </div>
+                         <div class="text-center"><button type="submit">Send Message</button></div>
+                     </form>
+                 </div>
+
+             </div>
+
+         </div>
+     </section><!-- End Contact Section -->
+
+ </main><!-- End #main -->

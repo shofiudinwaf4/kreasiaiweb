@@ -1,105 +1,49 @@
-    <!-- Start Home Page Slider -->
-    <section id="page-top">
-        <!-- Carousel -->
-        <div id="main-slide" class="carousel slide" data-ride="carousel">
+<main id="main">
 
-            <!-- Carousel inner -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img class="img-responsive" src="<?= base_url() ?>/fame-main/images/header-bg-1.jpg" alt="slider">
-                    <div class="slider-content">
-                        <div class="col-md-12 text-center">
-                            <h1 class="animated3">
-                                <span><?= $layanan['nama_layanan']; ?></span>
-                            </h1>
-                            <p class="animated2"><?= $layanan['detail_layanan']; ?></p>
-                            <a class="animated3 slider btn btn-primary btn-min-block" href="#">Paket Harga</a><a class="animated3 slider btn btn-default btn-min-block" href="#">Konsultasi Layanan</a>
-                        </div>
-                    </div>
-                </div>
-                <!--/ Carousel item end -->
-
-
-            </div>
-            <!-- /carousel -->
-    </section>
-    <!-- End Home Page Slider -->
-
-    <!-- Start Team Member Section -->
-    <section id="team" class="team-member-section">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="section-title text-center">
-                        <h3>Galeri Desain</h3>
-                        <p>Berikut beberapa projek yang pernah kami kerjakan:</p>
-                    </div>
-                </div>
+
+            <ol>
+                <li><a href="<?= base_url('/'); ?>"><?= $menu; ?></a></li>
+                <li><?= $submenu; ?></li>
+            </ol>
+            <h2><?= $layanan['nama_layanan']; ?></h2>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <p><?= $layanan['detail_layanan']; ?></p>
             </div>
 
             <div class="row">
-                <div class="col-md-12">
-                    <div id="team-section">
+                <?php foreach ($paket_layanan as $key => $paket) { ?>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 
-                        <div class="our-team">
-                            <?php foreach ($galeri_layanan as $key => $value) : ?>
-                                <div class="team-member">
-                                    <img src="/admin/uploads/<?= $value['nama_gambar']; ?>" class="img-responsive" alt="">
-                                </div>
-                            <?php endforeach; ?>
+                        <div class="box">
+                            <h3 class="text-center"><?= $paket['nama_paket']; ?></h3>
+                            <h4 class="text-center"><?= $paket['harga_paket']; ?></h4>
+                            <h2 class="text-center"><s><?= $paket['diskon']; ?></s></h2>
+                            <ul>
+                                <?= $paket['detail_paket']; ?>
+                            </ul>
+                            <a href="#" class="buy-btn">Get Started</a>
                         </div>
-
-
                     </div>
-                </div>
+                <?php } ?>
+
+
+
             </div>
 
         </div>
-    </section>
-    <!-- End Team Member Section -->
-
-    <!-- Start Pricing Table Section -->
-    <div id="pricing" class="pricing-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-12">
-                        <div class="section-title text-center">
-                            <h3>Harga Layanan</h3>
-                            <p class="white-text">Berikut Daftar Harga Layanan yang Kami Berikan:</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="pricing">
-                    <?php foreach ($paket_layanan as $p) : ?>
-                        <div class="col-md-12">
-                            <div class="pricing-table">
-                                <div class="plan-name">
-                                    <h3><?= $p['nama_paket']; ?></h3>
-                                </div>
-                                <div class="plan-price">
-                                    <div class="price-value"><?= $p['harga_paket']; ?></div>
-                                    <div class="interval">per month</div>
-                                </div>
-                                <div class="plan-list">
-                                    <ul>
-                                        <li><?= $p['detail_paket']; ?></li>
-                                    </ul>
-                                </div>
-                                <div class="plan-signup">
-                                    <a href="#" class="btn-system btn-small">Ambil Paket</a>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
+    </section><!-- End Pricing Section -->
 
 
-            </div>
-        </div>
-    </div>
-    <!-- End Pricing Table Section -->
+</main><!-- End #main -->

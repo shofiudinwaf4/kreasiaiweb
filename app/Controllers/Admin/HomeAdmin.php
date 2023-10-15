@@ -19,15 +19,41 @@ class HomeAdmin extends BaseController
     public function index()
     {
         $layanan = $this->LayananModel->findAll();
+        $currentPage = $this->request->getVar('page_layanan') ? $this->request->getVar('page_layanan') : 1;
+        // $layanan = $this->LayananModel->findAll();
+        $keyword = $this->request->getVar('keyword');
+        if ($keyword) {
+            $layanan = $this->LayananModel->search($keyword);
+            # code...
+        } else {
+            $layanan = $this->LayananModel;
+        }
         $data = [
             'title' => 'Dashboard',
             'isi' => 'admin/v_home',
-            'menu' => 'layanan',
-            'submenu' => 'daftar_layanan',
+            'judul' => 'Dashboard',
+            'subjudul' => 'Dashboard',
+            'menu' => 'dashboard',
+            'submenu' => 'dashboard',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
-            'layanan' => $layanan,
-        ];
+            'layanan' => $this->LayananModel->paginate(5, 'layanan'),
+            'pager' => $this->LayananModel->pager,
+            'currentPage' => $currentPage,
 
+
+        ];
+        if ($this->request->getVar('aksi') == 'hapus' && $this->request->getVar('id_layanan')) {
+            $dataPost = $this->LayananModel->getLayanan($this->request->getVar('id_layanan'));
+            if ($dataPost['id_layanan']) { #memastikan bahwa ada data di folder uploads
+                if ($dataPost['gambar_layanan'] != 'default.jpeg') {
+
+                    unlink("admin/uploads/" . $dataPost['gambar_layanan']);
+                }
+                $this->LayananModel->Delete_layanan($this->request->getVar('id_layanan'));
+            }
+            session()->setFlashdata('pesan', 'Data berhasil dihapus');
+            return redirect()->to("homeadmin/layanan");
+        }
         echo view('layoutAdmin/v_wrapper', $data);
     }
     public function Layanan()
@@ -44,6 +70,8 @@ class HomeAdmin extends BaseController
         $data = [
             'title' => 'Layanan',
             'isi' => 'admin/v_layanan',
+            'judul' => 'Layanan',
+            'subjudul' => 'Daftar Layanan',
             'menu' => 'layanan',
             'submenu' => 'daftar_layanan',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
@@ -73,6 +101,8 @@ class HomeAdmin extends BaseController
         $data = [
             'title' => 'Detail Layanan',
             'isi' => 'admin/v_detaillayanan',
+            'judul' => 'Layanan',
+            'subjudul' => $this->LayananModel->getLayanan($id),
             'menu' => 'layanan',
             'submenu' => 'daftar_layanan',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
@@ -88,8 +118,11 @@ class HomeAdmin extends BaseController
         $data = [
             'title' => 'Tambah Layanan',
             'isi' => 'admin/v_tambahlayanan',
+            'judul' => 'Layanan',
+            'subjudul' => 'Tambah Layanan',
             'menu' => 'layanan',
             'submenu' => 'tambah_layanan',
+            'ikon' => $this->LayananModel->getIkon(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'tambahlayanan' => $this->LayananModel->getLayanan(),
@@ -121,21 +154,11 @@ class HomeAdmin extends BaseController
             // $validation = \Config\Services::validation();
             return redirect()->to('homeadmin/tambahlayanan')->withInput();
         }
-        // ambil gambar
-        $filegambar = $this->request->getFile('gambar_layanan');
-        // memberikan gambar default bila tidak ada gambar yang diupload
-        if ($filegambar->getError() == 4) {
-            $namaGambar = 'default.jpeg';
-        } else {
-            // ambil nama file
-            $namaGambar = $filegambar->getRandomName();
-            $filegambar->move('admin/uploads', $namaGambar);
-        }
         $this->LayananModel->save([
             'nama_layanan' => $this->request->getVar('nama_layanan'),
             'detail_layanan' => $this->request->getVar('detail_layanan'),
             'deskripsi_layanan' => $this->request->getVar('deskripsi_layanan'),
-            'gambar_layanan' => $namaGambar
+            'gambar_layanan' => $this->request->getVar('gambar_layanan')
         ]);
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
 
@@ -146,8 +169,11 @@ class HomeAdmin extends BaseController
         $data = [
             'title' => 'Edit Layanan',
             'isi' => 'admin/v_editlayanan',
+            'judul' => 'Layanan',
+            'subjudul' => 'Edit Layanan',
             'menu' => 'layanan',
             'submenu' => 'edit_layanan',
+            'ikon' => $this->LayananModel->getIkon(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'editlayanan' => $this->LayananModel->getLayanan($id),
@@ -163,50 +189,28 @@ class HomeAdmin extends BaseController
                 'errors' => [
                     'required' => 'Nama layanan harus terisi'
                 ]
-            ],
-            'gambar_layanan' => [
-                'rules' => 'is_image[gambar_layanan]'
-                    . '|mime_in[gambar_layanan,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
-                    . '|max_size[gambar_layanan,2048]',
-                'errors' => [
-                    'max_size' => 'Ukuran gambar terlalu besar',
-                    'is_image' => 'Yang anda pilih bukan gambar',
-                    'mime_in' => 'Yang anda pilih bukan gambar'
-                ]
             ]
         ])) {
             // $validation = \Config\Services::validation();
-            return redirect()->to('homeadmin/editlayanan')->withInput();
-        }
-
-        $fileGambar = $this->request->getFile('gambar_layanan');
-        // cek gambar apakah masih memakai gambar lama
-        if ($fileGambar->getError() == 4) {
-            $namaGambar = $this->request->getVar('gambarlama');
-            # code...
-        } else {
-            // generate nama file random
-            $namaGambar = $fileGambar->getRandomName();
-            // pindahkan gambar
-            $fileGambar->move('admin/uploads', $namaGambar);
-            // hapus file lama
-            unlink('admin/uploads/' . $this->request->getVar('gambarlama'));
+            return redirect()->to('homeadmin/editlayanan/' . $id)->withInput();
         }
         $data = [
             'nama_layanan' => $this->request->getVar('nama_layanan'),
             'deskripsi_layanan' => $this->request->getVar('deskripsi_layanan'),
             'detail_layanan' => $this->request->getPost('detail_layanan'),
-            'gambar_layanan' => $namaGambar
+            'gambar_layanan' => $this->request->getVar('gambar_layanan')
         ];
         $this->LayananModel->Update_layanan($data, $id);
         session()->setFlashdata('pesan', 'Data berhasil diupdate');
-        return redirect()->to(base_url('homeadmin/layanan'));
+        return redirect()->to(base_url('homeadmin'));
     }
     public function GaleriLayanan($id)
     {
         $data = [
             'title' => 'Galeri Layanan',
             'isi' => 'admin/v_galerilayanan',
+            'judul' => 'Layanan',
+            'subjudul' => 'Galeri Layanan',
             'menu' => 'layanan',
             'submenu' => 'daftar_layanan',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
@@ -222,6 +226,8 @@ class HomeAdmin extends BaseController
         $data = [
             'title' => 'Tambah Galeri Layanan',
             'isi' => 'admin/v_tambahgalerilayanan',
+            'judul' => 'Layanan',
+            'subjudul' => 'Tambah Galeri Layanan',
             'menu' => 'layanan',
             'submenu' => 'tg_layanan',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
@@ -263,12 +269,15 @@ class HomeAdmin extends BaseController
         $data = [
             'title' => 'Paket Layanan',
             'isi' => 'admin/v_daftarpaketlayanan',
+            'judul' => 'Layanan',
+            'subjudul' => 'Daftar Paket',
             'menu' => 'layanan',
             'submenu' => 'daftar_layanan',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'daftarpaket' => $this->LayananModel->getLayanan($id),
             'layanan' => $this->LayananModel->findAll(),
-            'paket_layanan' => $this->LayananModel->getPaket($id)
+            'paket_layanan' => $this->LayananModel->getPaket($id),
+            'detail_layanan' => $this->LayananModel->getLayanan($id)
         ];
         if ($this->request->getVar('aksi') == 'hapus' && $this->request->getVar('id_paket')) {
             $dataPost = $this->LayananModel->getPaket($this->request->getVar('id_paket'));
@@ -288,6 +297,8 @@ class HomeAdmin extends BaseController
         $data = [
             'title' => 'Tambah Paket Layanan',
             'isi' => 'admin/v_tambahpaketlayanan',
+            'judul' => 'Layanan',
+            'subjudul' => 'Tambah Paket Layanan',
             'menu' => 'layanan',
             'submenu' => 'tp_layanan',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
@@ -376,6 +387,8 @@ class HomeAdmin extends BaseController
         $data = [
             'title' => 'Edit Paket',
             'isi' => 'admin/v_editpaketlayanan',
+            'judul' => 'Layanan',
+            'subjudul' => 'Edit Paket Layanan',
             'menu' => 'layanan',
             'submenu' => 'daftar_paket',
             'perusahaan' => $this->PerusahaanModel->DetailData(),

@@ -18,9 +18,17 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                <li class="nav-item <?= $menu == 'layanan' ? 'menu-open' : 'menu-close' ?>">
-                    <a href="#" class="nav-link active">
+                <li class="nav-item">
+                    <a href="<?= base_url('homeadmin'); ?>" class="nav-link <?= $menu == 'dashboard' ? 'active' : '' ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dashboard
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item <?= $menu == 'layanan' ? 'menu-open' : 'menu-close' ?>">
+                    <a href="#" class="nav-link <?= $menu == 'layanan' ? 'active' : '' ?>">
+                        <i class=" nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Layanan
                             <i class="right fas fa-angle-left"></i>
@@ -33,18 +41,29 @@
                                 <p>Tambah Layanan</p>
                             </a>
                         </li>
-                        <?php foreach ($layanan as $key) { ?>
-                            <li class="nav-item">
-                                <a class="nav-link  <?= $submenu == $key['nama_layanan'] ? 'active' : '' ?>" href="<?= base_url('homeadmin/detaillayanan/' . $key['id_layanan']); ?>">
-                                    <i class="nav-icon fas fa-table"></i>
-                                    <p><?= $key['nama_layanan']; ?></p>
-                                </a>
-                            </li>
+                        <?php if ($submenu == 'daftar_layanan') { ?>
+                            <?php foreach ($layanan as $key) { ?>
+                                <li class="nav-item">
+                                    <a class="nav-link  <?= $detail_layanan['id_layanan'] == $key['id_layanan'] ? 'active' : '' ?>" href="<?= base_url('homeadmin/detaillayanan/' . $key['id_layanan']); ?>">
+                                        <i class="nav-icon fas <?= $key['gambar_layanan']; ?>"></i>
+                                        <p><?= $key['nama_layanan']; ?></p>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                        <?php } else { ?>
+                            <?php foreach ($layanan as $key) { ?>
+                                <li class="nav-item">
+                                    <a class="nav-link  <?= $submenu == $key['id_layanan'] ? 'active' : '' ?>" href="<?= base_url('homeadmin/detaillayanan/' . $key['id_layanan']); ?>">
+                                        <i class="nav-icon fas <?= $key['gambar_layanan']; ?>"></i>
+                                        <p><?= $key['nama_layanan']; ?></p>
+                                    </a>
+                                </li>
+                            <?php } ?>
                         <?php } ?>
                     </ul>
                 </li>
                 <li class="nav-item <?= $menu == 'klien' ? 'menu-open' : 'menu-close' ?>">
-                    <a href="" class="nav-link active">
+                    <a href="" class="nav-link <?= $menu == 'klien' ? 'active' : '' ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Klien
@@ -60,14 +79,14 @@
                         </li>
                         <li class="nav-item">
                             <a href="<?= base_url('klien/daftarklien'); ?>" class="nav-link <?= $submenu == 'daftar_klien' ? 'active' : '' ?>">
-                                <i class="far fa-table nav-icon"></i>
+                                <i class="nav-icon fas fa-table"></i>
                                 <p>Daftar Klien</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item <?= $menu == 'setting' ? 'menu-open' : 'menu-close' ?>">
-                    <a href="" class="nav-link active">
+                    <a href="" class="nav-link <?= $menu == 'setting' ? 'active' : '' ?>">
                         <i class="fas fa-wrench nav-icon"></i>
                         <p>
                             Setting
@@ -81,6 +100,12 @@
                                 <p>Perusahaan</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('setting/sosmed'); ?>" class="nav-link <?= $submenu == 'sosmed_perusahaan' ? 'active' : '' ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Sosial Media</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -91,34 +116,12 @@
     <!-- /.sidebar -->
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0"><?= $title; ?></h1>
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Home</li>
-                        </ol>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+            <h5>Title</h5>
+            <p>Sidebar content</p>
         </div>
-        <!-- /.content-header -->
-
-
-
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-            <div class="p-3">
-                <h5>Title</h5>
-                <p>Sidebar content</p>
-            </div>
-        </aside>
-        <!-- /.control-sidebar -->
+    </aside>
+    <!-- /.control-sidebar -->

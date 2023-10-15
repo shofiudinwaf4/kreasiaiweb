@@ -1,82 +1,34 @@
-<body class="index">
+<body>
+    <?php $db = \Config\Database::connect();
+    $perusahaan = $db->table('perusahaan')->where('id_perusahaan', 1)->get()->getRowArray();
+    $layanan = $db->table('layanan')->get()
+        ->getResultArray() ?>
 
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top <?= $subtitle == 'home' ? '' : 'header-inner-pages' ?> ">
+        <div class="container d-flex align-items-center">
 
-    <!-- Styleswitcher
-================================================== -->
-    <!-- <div class="colors-switcher">
-        <a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>
-        <ul class="colors-list">
-            <li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>
-            <li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>
-            <li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>
-            <li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>
+            <h1 class="logo me-auto"><a href="<?= base_url('/'); ?>"><?= $perusahaan['nama_perusahaan']; ?></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-            <li class="no-margin"><a title="light-green" class="light-green" onClick="setActiveStyleSheet('light-green'); return false;"></a></li>
-            <li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>
-
-        </ul>
-
-    </div> -->
-    <!-- Styleswitcher End
-================================================== -->
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">KREASI AI</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#feature">Feature</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about-us">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll dropdown bi bi-chevron-down" href="#service">Layanan</a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="<?php base_url('home') ?>">Home</a></li>
+                    <li><a class="nav-link scrollto" href="<?php base_url('tentang_kami') ?>">Tentang Kami</a></li>
+                    <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li>1</li>
-                            <li>2</li>
+                            <?php foreach ($layanan as $key => $l) { ?>
+                                <li><a href="<?= base_url('layanan/' . $l['id_layanan']) ?>"><?= $l['nama_layanan']; ?></a></li>
+                            <?php } ?>
+
                         </ul>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#pricing">Pricing</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#latest-news">Latest News</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#testimonial">Testimonials</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#partner">Partner</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="https://www.instagram.com/kreasiai.idn/">Portofolio</a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+    </header><!-- End Header -->

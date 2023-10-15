@@ -27,6 +27,14 @@ class Perusahaan extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],
+            'telp_perusahaan' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
+            'email_perusahaan' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+            ],
             'alamat_perusahaan' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',

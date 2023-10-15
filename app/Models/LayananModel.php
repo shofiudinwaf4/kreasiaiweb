@@ -20,6 +20,10 @@ class LayananModel extends Model
         }
         return $this->where(['id_layanan' => $id])->first();
     }
+    public function getIkon()
+    {
+        return $this->find();
+    }
     public function Update_layanan($data, $id)
     {
         return $this->db->table($this->table)->update($data, array('id_layanan' => $id));

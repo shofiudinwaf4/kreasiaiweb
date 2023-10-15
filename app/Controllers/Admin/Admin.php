@@ -97,7 +97,7 @@ class Admin extends BaseController
     }
     function sukses()
     {
-        return redirect()->to('homeadmin/layanan');
+        return redirect()->to('homeadmin');
     }
     function logout()
     {
