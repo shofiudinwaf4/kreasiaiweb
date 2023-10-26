@@ -33,7 +33,7 @@
                             <ul>
                                 <?= $paket['detail_paket']; ?>
                             </ul>
-                            <a href="#" class="buy-btn">Get Started</a>
+                            <a href="https://wa.me/<?= $perusahaan['telp_perusahaan']; ?>?text=Saya%20ingin%20memesan%20<?= $paket['nama_paket']; ?>" class="buy-btn">Get Started</a>
                         </div>
                     </div>
                 <?php } ?>

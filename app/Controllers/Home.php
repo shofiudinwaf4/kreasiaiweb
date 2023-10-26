@@ -42,6 +42,7 @@ class Home extends BaseController
             'subtitle' => 'layanan',
             'titlelayanan' => 'layanan',
             'stlayanan' => 'Kami Siap Melayani Anda',
+            'perusahaan' => $this->PerusahaanModel->DetailData(),
             'layanan' => $this->LayananModel->getLayanan($id),
             'galeri_layanan' => $this->LayananModel->getGaleri($id),
             'paket_layanan' => $this->LayananModel->getPaket($id)

@@ -70,7 +70,9 @@
 
  <div id="preloader"></div>
  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+ <a href="https://wa.me/<?= $perusahaan['telp_perusahaan']; ?>?text=Hi%20Qiscus" class="floating" target="_blank">
+     <i class="fab fa-whatsapp fab-icon"></i>
+ </a>
  <!-- Vendor JS Files -->
  <script src="<?= base_url('arsha'); ?>/assets/vendor/aos/aos.js"></script>
  <script src="<?= base_url('arsha'); ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -82,7 +84,31 @@
 
  <!-- Template Main JS File -->
  <script src="<?= base_url('arsha'); ?>/assets/js/main.js"></script>
+ <style>
+     body {
+         font-family: sans-serif;
+     }
 
+     /* Add WA floating button CSS */
+     .floating {
+         position: fixed;
+         width: 60px;
+         height: 60px;
+         bottom: 40px;
+         left: 40px;
+         background-color: #25d366;
+         color: #fff;
+         border-radius: 50px;
+         text-align: center;
+         font-size: 30px;
+         box-shadow: 2px 2px 3px #999;
+         z-index: 100;
+     }
+
+     .fab-icon {
+         margin-top: 16px;
+     }
+ </style>
  </body>
 
  </html>
