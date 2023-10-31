@@ -84,6 +84,7 @@ class Admin extends BaseController
             // }
             // session
             $akun = [
+                'id_user' => $dataAkun['id_user'],
                 'akun_username' => $dataAkun['username'],
                 'akun_nama_lengkap' => $dataAkun['nama_lengkap'],
                 'akun_email' => $dataAkun['email']

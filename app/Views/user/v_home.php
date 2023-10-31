@@ -25,32 +25,15 @@
      <!-- ======= Cliens Section ======= -->
      <section id="cliens" class="cliens section-bg">
          <div class="container">
-
+             <div class="section-title">
+                 <h2>Klien Kami</h2>
+             </div>
              <div class="row" data-aos="zoom-in">
-
-                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-1.png" class="img-fluid" alt="">
-                 </div>
-
-                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-2.png" class="img-fluid" alt="">
-                 </div>
-
-                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-3.png" class="img-fluid" alt="">
-                 </div>
-
-                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-4.png" class="img-fluid" alt="">
-                 </div>
-
-                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-5.png" class="img-fluid" alt="">
-                 </div>
-
-                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                     <img src="<?= base_url('arsha'); ?>/assets/img/clients/client-6.png" class="img-fluid" alt="">
-                 </div>
+                 <?php foreach ($klien as $key => $k) { ?>
+                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                         <img src="<?= base_url('uploads/' . $k['logo_klien']); ?>" class="img-fluid" alt="">
+                     </div>
+                 <?php } ?>
 
              </div>
 
@@ -100,6 +83,4 @@
 
          </div>
      </section><!-- End Services Section -->
-
-
  </main><!-- End #main -->

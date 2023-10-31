@@ -6,6 +6,7 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\LayananModel;
 use App\Models\PerusahaanModel;
+use App\Models\AdminModel;
 use CodeIgniter\Config\Config;
 
 
@@ -15,6 +16,7 @@ class Setting extends BaseController
     {
         $this->LayananModel = new LayananModel();
         $this->PerusahaanModel = new PerusahaanModel();
+        $this->AdminModel = new AdminModel();
     }
     public function Perusahaan()
     {
@@ -26,6 +28,7 @@ class Setting extends BaseController
             'subjudul' => 'Perusahaan',
             'menu' => 'setting',
             'submenu' => 'perusahaan',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'layanan' => $layanan,
         ];
@@ -125,6 +128,7 @@ class Setting extends BaseController
             'subjudul' => 'Sosmed Perusahaan',
             'menu' => 'setting',
             'submenu' => 'sosmed_perusahaan',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'layanan' => $layanan,
             'sosmed' => $this->PerusahaanModel->AllSosmed(),
@@ -142,6 +146,7 @@ class Setting extends BaseController
             'subjudul' => 'Tambah Sosial Media',
             'menu' => 'Setting',
             'submenu' => 'tambah_sosmed',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'tambahlayanan' => $this->LayananModel->getLayanan(),
@@ -191,6 +196,7 @@ class Setting extends BaseController
             'subjudul' => 'Tambah Sosial Media',
             'menu' => 'Setting',
             'submenu' => 'edit_sosmed',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'tambahlayanan' => $this->LayananModel->getLayanan(),

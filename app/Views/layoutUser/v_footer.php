@@ -12,8 +12,8 @@
              <div class="row">
 
                  <div class="col-lg-3 col-md-6 footer-contact">
-                     <h3><?= $perusahaan['nama_perusahaan']; ?></h3>
-                     <p>
+                     <h3 class="text-light "><?= $perusahaan['nama_perusahaan']; ?></h3>
+                     <p class="text-light ">
                          <?= $perusahaan['alamat_perusahaan']; ?><br>
                          <strong>Phone: </strong><?= $perusahaan['telp_perusahaan']; ?><br>
                          <strong>Email: </strong><?= $perusahaan['email_perusahaan']; ?><br>
@@ -21,25 +21,25 @@
                  </div>
 
                  <div class="col-lg-3 col-md-6 footer-links">
-                     <h4>Useful Links</h4>
+                     <h4 class="text-light ">Useful Links</h4>
                      <ul>
-                         <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                         <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-                         <li><i class="bx bx-chevron-right"></i> <a href="#">Layanan</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-light">Home</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-light">Tentang Kami</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-light">Layanan</a></li>
                      </ul>
                  </div>
 
                  <div class="col-lg-3 col-md-6 footer-links">
-                     <h4>Layanan Kami</h4>
-                     <ul>
+                     <h4 class="text-light ">Layanan Kami</h4>
+                     <ul class="text-light ">
                          <?php foreach ($layanan as $key => $value) { ?>
-                             <li><i class="bx bx-chevron-right"></i> <a href="#"><?= $value['nama_layanan']; ?></a></li>
+                             <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-light"><?= $value['nama_layanan']; ?></a></li>
                          <?php } ?>
                      </ul>
                  </div>
 
                  <div class="col-lg-3 col-md-6 footer-links">
-                     <h4>Sosial Media Kami</h4>
+                     <h4 class="text-light ">Sosial Media Kami</h4>
                      <div class="social-links mt-3">
                          <?php foreach ($sosmed as $key => $sos) { ?>
                              <a href="<?php $sos['alamat_sosmed']; ?>" class="<?php $sos['nama_sosmed'] ?>"><i class="<?= $sos['logo_sosmed']; ?>"></i></a>
@@ -52,6 +52,7 @@
      </div>
 
      <div class="container footer-bottom clearfix">
+
          <div class="copyright">
              &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
          </div>

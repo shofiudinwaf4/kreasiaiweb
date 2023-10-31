@@ -36,6 +36,7 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/', 'Home::Artikel');
 $routes->get('layanan/(:segment)', 'Home::Layanan/$1');
 $routes->add('admin/logout', 'Admin\Admin::logout');
 $routes->group('admin', ['filter' => 'noauth'], function ($routes) {
@@ -67,6 +68,14 @@ $routes->group('homeadmin', ['filter' => 'auth'], function ($routes) {
     $routes->add('editpaket/(:segment)', 'Admin\HomeAdmin::EditPaket/$1');
     $routes->add('updatepaket/(:segment)', 'Admin\HomeAdmin::UpdatePaket/$1');
     // $routes->delete('delete/(:num)', 'Admin\HomeAdmin::Delete/$1');
+});
+$routes->group('artikel', ['filter' => 'auth'], function ($routes) {
+    $routes->add('kelolaartikel', 'Admin\Artikel::Artikel');
+    $routes->add('tambahartikel', 'Admin\Artikel::TambahArtikel');
+    $routes->add('save', 'Admin\Artikel::Save');
+    $routes->add('editartikel/(:segment)', 'Admin\Artikel::EditArtikel/$1');
+    $routes->add('detailartikel/(:segment)', 'Admin\Artikel::DetailArtikel/$1');
+    $routes->add('update/(:segment)', 'Admin\Artikel::Update/$1');
 });
 $routes->group('klien', ['filter' => 'auth'], function ($routes) {
     $routes->add('daftarklien', 'Admin\Klien::DaftarKlien');

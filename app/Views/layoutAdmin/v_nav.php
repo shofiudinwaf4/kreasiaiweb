@@ -28,7 +28,7 @@
                 </li>
                 <li class="nav-item <?= $menu == 'layanan' ? 'menu-open' : 'menu-close' ?>">
                     <a href="#" class="nav-link <?= $menu == 'layanan' ? 'active' : '' ?>">
-                        <i class=" nav-icon fas fa-tachometer-alt"></i>
+                        <i class=" nav-icon fas fa-list"></i>
                         <p>
                             Layanan
                             <i class="right fas fa-angle-left"></i>
@@ -39,6 +39,12 @@
                             <a href="<?= base_url('homeadmin/tambahlayanan'); ?>" class="nav-link <?= $submenu == 'tambah_layanan' ? 'active' : '' ?>">
                                 <i class="nav-icon far fa-plus-square"></i>
                                 <p>Tambah Layanan</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('homeadmin/layanan'); ?>" class="nav-link <?= $submenu == 'kelola_layanan' ? 'active' : '' ?>">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>Kelola Layanan</p>
                             </a>
                         </li>
                         <?php if ($submenu == 'daftar_layanan') { ?>
@@ -64,7 +70,7 @@
                 </li>
                 <li class="nav-item <?= $menu == 'klien' ? 'menu-open' : 'menu-close' ?>">
                     <a href="" class="nav-link <?= $menu == 'klien' ? 'active' : '' ?>">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-list"></i>
                         <p>
                             Klien
                             <i class="right fas fa-angle-left"></i>
@@ -80,7 +86,30 @@
                         <li class="nav-item">
                             <a href="<?= base_url('klien/daftarklien'); ?>" class="nav-link <?= $submenu == 'daftar_klien' ? 'active' : '' ?>">
                                 <i class="nav-icon fas fa-table"></i>
-                                <p>Daftar Klien</p>
+                                <p>Kelola Klien</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item <?= $menu == 'artikel' ? 'menu-open' : 'menu-close' ?>">
+                    <a href="" class="nav-link <?= $menu == 'artikel' ? 'active' : '' ?>">
+                        <i class="nav-icon fas fa-list"></i>
+                        <p>
+                            Artikel
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url('artikel/tambahartikel'); ?>" class="nav-link <?= $submenu == 'tambah_artikel' ? 'active' : '' ?>">
+                                <i class="nav-icon far fa-plus-square"></i>
+                                <p>Tambah Artikel</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('artikel/kelolaartikel'); ?>" class="nav-link <?= $submenu == 'kelola_artikel' ? 'active' : '' ?>">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>Kelola Klien</p>
                             </a>
                         </li>
                     </ul>

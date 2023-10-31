@@ -10,7 +10,7 @@ class Admin extends Migration
     {
         //membuat tabel admin
         $this->forge->addField([
-            'id' => [
+            'id_user' => [
                 'type' => 'INT',
                 'constraint' => 5,
                 'unsigned' => true,
@@ -40,7 +40,7 @@ class Admin extends Migration
             ],
             'last_login timestamp default now()'
         ]);
-        $this->forge->addKey('id', TRUE);
+        $this->forge->addKey('id_user', TRUE);
         $this->forge->createTable('admin', TRUE);
     }
 

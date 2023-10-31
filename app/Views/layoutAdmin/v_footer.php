@@ -303,7 +303,7 @@
             ]
         },
         // // https://ckeditor.com/docs/ckeditor5/latest/features/editor-placeholder.html#using-the-editor-configuration
-        placeholder: 'Detail Paket',
+        placeholder: 'masukkan text',
         // // https://ckeditor.com/docs/ckeditor5/latest/features/font.html#configuring-the-font-family-feature
         fontFamily: {
             options: [
@@ -664,6 +664,23 @@
     function previewLgKlien() {
 
         const gambar = document.querySelector('#logo_klien');
+        const gambarlabel = document.querySelector('.custom-file-label');
+        const imgPreview = document.querySelector('.img-preview');
+
+        gambarlabel.textContent = gambar.files[0].name;
+
+        const filegambar = new FileReader();
+        filegambar.readAsDataURL(gambar.files[0]);
+
+        filegambar.onload = function(e) {
+            imgPreview.src = e.target.result;
+        }
+    }
+</script>
+<script>
+    function previewArtikel() {
+
+        const gambar = document.querySelector('#gambar_artikel');
         const gambarlabel = document.querySelector('.custom-file-label');
         const imgPreview = document.querySelector('.img-preview');
 

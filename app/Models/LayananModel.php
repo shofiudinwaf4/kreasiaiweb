@@ -18,7 +18,7 @@ class LayananModel extends Model
         if ($id == false) {
             return $this->find();
         }
-        return $this->where(['id_layanan' => $id])->first();
+        return $this->where(['slug' => $id])->first();
     }
     public function getIkon()
     {

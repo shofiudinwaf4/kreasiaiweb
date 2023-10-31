@@ -4,6 +4,7 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
+use App\Models\AdminModel;
 use App\Models\LayananModel;
 use App\Models\PerusahaanModel;
 use CodeIgniter\Config\Config;
@@ -15,6 +16,7 @@ class HomeAdmin extends BaseController
     {
         $this->PerusahaanModel = new PerusahaanModel();
         $this->LayananModel = new LayananModel();
+        $this->AdminModel = new AdminModel();
     }
     public function index()
     {
@@ -35,12 +37,11 @@ class HomeAdmin extends BaseController
             'subjudul' => 'Dashboard',
             'menu' => 'dashboard',
             'submenu' => 'dashboard',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'layanan' => $this->LayananModel->paginate(5, 'layanan'),
             'pager' => $this->LayananModel->pager,
             'currentPage' => $currentPage,
-
-
         ];
         if ($this->request->getVar('aksi') == 'hapus' && $this->request->getVar('id_layanan')) {
             $dataPost = $this->LayananModel->getLayanan($this->request->getVar('id_layanan'));
@@ -73,9 +74,10 @@ class HomeAdmin extends BaseController
             'judul' => 'Layanan',
             'subjudul' => 'Daftar Layanan',
             'menu' => 'layanan',
-            'submenu' => 'daftar_layanan',
+            'submenu' => 'kelola_layanan',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
-            'layanan' => $this->LayananModel->paginate(5, 'layanan'),
+            'layanan' => $this->LayananModel->findAll(),
             'pager' => $this->LayananModel->pager,
             'currentPage' => $currentPage
         ];
@@ -96,8 +98,6 @@ class HomeAdmin extends BaseController
     }
     public function DetailLayanan($id)
     {
-
-
         $data = [
             'title' => 'Detail Layanan',
             'isi' => 'admin/v_detaillayanan',
@@ -105,6 +105,7 @@ class HomeAdmin extends BaseController
             'subjudul' => $this->LayananModel->getLayanan($id),
             'menu' => 'layanan',
             'submenu' => 'daftar_layanan',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'layanan' => $this->LayananModel->findAll(),
             'detail_layanan' => $this->LayananModel->getLayanan($id)
@@ -122,7 +123,7 @@ class HomeAdmin extends BaseController
             'subjudul' => 'Tambah Layanan',
             'menu' => 'layanan',
             'submenu' => 'tambah_layanan',
-            'ikon' => $this->LayananModel->getIkon(),
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'tambahlayanan' => $this->LayananModel->getLayanan(),
@@ -158,7 +159,9 @@ class HomeAdmin extends BaseController
             'nama_layanan' => $this->request->getVar('nama_layanan'),
             'detail_layanan' => $this->request->getVar('detail_layanan'),
             'deskripsi_layanan' => $this->request->getVar('deskripsi_layanan'),
-            'gambar_layanan' => $this->request->getVar('gambar_layanan')
+            'gambar_layanan' => $this->request->getVar('gambar_layanan'),
+            'slug' => url_title($this->request->getPost('nama_layanan'), '-', true),
+
         ]);
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
 
@@ -173,7 +176,7 @@ class HomeAdmin extends BaseController
             'subjudul' => 'Edit Layanan',
             'menu' => 'layanan',
             'submenu' => 'edit_layanan',
-            'ikon' => $this->LayananModel->getIkon(),
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'editlayanan' => $this->LayananModel->getLayanan($id),
@@ -213,6 +216,7 @@ class HomeAdmin extends BaseController
             'subjudul' => 'Galeri Layanan',
             'menu' => 'layanan',
             'submenu' => 'daftar_layanan',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'galerilayanan' => $this->LayananModel->getLayanan($id),
             'layanan' => $this->LayananModel->findAll(),
@@ -230,6 +234,7 @@ class HomeAdmin extends BaseController
             'subjudul' => 'Tambah Galeri Layanan',
             'menu' => 'layanan',
             'submenu' => 'tg_layanan',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'tambahgalerilayanan' => $this->LayananModel->getLayanan(),
             'layanan' => $this->LayananModel->findAll(),
@@ -273,6 +278,7 @@ class HomeAdmin extends BaseController
             'subjudul' => 'Daftar Paket',
             'menu' => 'layanan',
             'submenu' => 'daftar_layanan',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'daftarpaket' => $this->LayananModel->getLayanan($id),
             'layanan' => $this->LayananModel->findAll(),
@@ -301,6 +307,7 @@ class HomeAdmin extends BaseController
             'subjudul' => 'Tambah Paket Layanan',
             'menu' => 'layanan',
             'submenu' => 'tp_layanan',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'tambahpaketlayanan' => $this->LayananModel->getLayanan(),
@@ -391,6 +398,7 @@ class HomeAdmin extends BaseController
             'subjudul' => 'Edit Paket Layanan',
             'menu' => 'layanan',
             'submenu' => 'daftar_paket',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'layanan' => $this->LayananModel->getLayanan($id),

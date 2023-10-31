@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 
+use App\Controllers\Admin\Artikel;
 use App\Models\LayananModel;
 
 use App\Models\KlienModel;
 use App\Models\PerusahaanModel;
+use App\Models\ArtikelModel;
 
 class Home extends BaseController
 {
@@ -14,6 +16,7 @@ class Home extends BaseController
     {
         $this->LayananModel = new LayananModel();
         $this->KlienModel = new KlienModel();
+        $this->ArtikelModel = new ArtikelModel();
         $this->PerusahaanModel = new PerusahaanModel();
     }
     public function index()
@@ -26,13 +29,34 @@ class Home extends BaseController
             'stlayanan' => 'Kami Siap Melayani Anda',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'sosmed' => $this->PerusahaanModel->AllSosmed(),
+            'artikel' => $this->ArtikelModel->DataLimit(),
             'layanan' => $this->LayananModel->getLayanan(),
             'klien' => $this->KlienModel->getKlien()
         ];
 
         echo view('layoutUser/v_wrapper', $data);
     }
-    public function Layanan($id)
+    public function Layanan($slug)
+    {
+        $layanan = $this->LayananModel->getLayanan($slug);
+        $id = $layanan['id_layanan'];
+        $data = [
+            'menu' => 'Home',
+            'submenu' => 'Layanan',
+            'title' => 'Selamat datang di <br> Kreasi AI <br> Kami siap Melayani!',
+            'isi' => 'user/v_layanan',
+            'subtitle' => 'layanan',
+            'titlelayanan' => 'layanan',
+            'stlayanan' => 'Kami Siap Melayani Anda',
+            'perusahaan' => $this->PerusahaanModel->DetailData(),
+            'layanan' => $layanan,
+            'galeri_layanan' => $this->LayananModel->getGaleri($id),
+            'paket_layanan' => $this->LayananModel->getPaket($id)
+        ];
+
+        echo view('layoutUser/v_wrapper', $data);
+    }
+    public function Artikel()
     {
         $data = [
             'menu' => 'Home',
@@ -43,9 +67,6 @@ class Home extends BaseController
             'titlelayanan' => 'layanan',
             'stlayanan' => 'Kami Siap Melayani Anda',
             'perusahaan' => $this->PerusahaanModel->DetailData(),
-            'layanan' => $this->LayananModel->getLayanan($id),
-            'galeri_layanan' => $this->LayananModel->getGaleri($id),
-            'paket_layanan' => $this->LayananModel->getPaket($id)
         ];
 
         echo view('layoutUser/v_wrapper', $data);

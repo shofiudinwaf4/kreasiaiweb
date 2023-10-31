@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\KlienModel;
 use App\Models\LayananModel;
 use App\Models\PerusahaanModel;
+use App\Models\AdminModel;
 
 
 class Klien extends BaseController
@@ -16,6 +17,7 @@ class Klien extends BaseController
         $this->KlienModel = new KlienModel();
         $this->PerusahaanModel = new PerusahaanModel();
         $this->LayananModel = new LayananModel();
+        $this->AdminModel = new AdminModel();
     }
     public function DaftarKlien()
     {
@@ -35,6 +37,7 @@ class Klien extends BaseController
             'submenu' => 'daftar_klien',
             'judul' => 'Klien',
             'subjudul' => 'Daftar Klien',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'layanan' => $this->LayananModel->findAll(),
             'klien' => $this->KlienModel->paginate(5, 'klien'),
@@ -67,6 +70,7 @@ class Klien extends BaseController
             'subjudul' => 'Tambah Klien',
             'menu' => 'klien',
             'submenu' => 'tambah_klien',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'klien' => $this->KlienModel->getklien(),
@@ -125,6 +129,7 @@ class Klien extends BaseController
             'subjudul' => 'Edit Klien',
             'menu' => 'klien',
             'submenu' => 'edit_klien',
+            'admin' => session()->get(),
             'perusahaan' => $this->PerusahaanModel->DetailData(),
             'validation' => \Config\Services::validation(),
             'klien' => $this->KlienModel->getKlien($id),
