@@ -36,7 +36,8 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/', 'Home::Artikel');
+$routes->get('artikel', 'Home::Artikel');
+$routes->get('singleartikel/(:segment)', 'Home::SingleArtikel/$1');
 $routes->get('layanan/(:segment)', 'Home::Layanan/$1');
 $routes->add('admin/logout', 'Admin\Admin::logout');
 $routes->group('admin', ['filter' => 'noauth'], function ($routes) {

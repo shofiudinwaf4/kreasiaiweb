@@ -1,0 +1,160 @@
+ERROR - 2023-10-31 05:53:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\kreasiaiweb\app\Models\PerusahaanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\kreasiaiweb\app\Controllers\Home.php(69): App\Models\PerusahaanModel->DetailData()
+#6 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->Artikel()
+#7 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\project\\krea...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\kreasiaiweb\app\Models\PerusahaanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\kreasiaiweb\app\Controllers\Home.php(69): App\Models\PerusahaanModel->DetailData()
+#5 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->Artikel()
+#6 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\project\\krea...')
+#10 {main}
+CRITICAL - 2023-10-31 05:53:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `perusahaan`
+WHERE `id_perusahaan` = :id_perusahaan:', [...], false)
+ 3 APPPATH\Models\PerusahaanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(69): App\Models\PerusahaanModel->DetailData()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Artikel()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-10-31 07:25:54 --> Undefined variable $judul
+in APPPATH\Views\user\v_artikel.php on line 8.
+ 1 APPPATH\Views\user\v_artikel.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $judul', 'APPPATH\\Views\\user\\v_artikel.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_artikel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/v_artikel', [], true)
+ 5 APPPATH\Views\layoutUser\v_content.php(4): view('user/v_artikel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_content.php', [], true)
+ 9 APPPATH\Views\layoutUser\v_wrapper.php(4): view('layoutUser/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_wrapper', [], true)
+13 APPPATH\Controllers\Home.php(73): view('layoutUser/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Artikel()
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-10-31 09:16:11 --> Undefined property: App\Controllers\Home::$ModelBerita
+in APPPATH\Controllers\Home.php on line 69.
+ 1 APPPATH\Controllers\Home.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelBerita', 'APPPATH\\Controllers\\Home.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Artikel()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-10-31 09:17:47 --> Undefined property: App\Controllers\Home::$ModelBerita
+in APPPATH\Controllers\Home.php on line 69.
+ 1 APPPATH\Controllers\Home.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$ModelBerita', 'APPPATH\\Controllers\\Home.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Artikel()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-10-31 09:18:10 --> Undefined variable $pager
+in APPPATH\Views\user\v_artikel.php on line 70.
+ 1 APPPATH\Views\user\v_artikel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\user\\v_artikel.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_artikel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/v_artikel', [], true)
+ 5 APPPATH\Views\layoutUser\v_content.php(4): view('user/v_artikel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_content.php', [], true)
+ 9 APPPATH\Views\layoutUser\v_wrapper.php(4): view('layoutUser/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_wrapper', [], true)
+13 APPPATH\Controllers\Home.php(74): view('layoutUser/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Artikel()
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-10-31 09:18:51 --> Undefined variable $pager
+in APPPATH\Views\user\v_artikel.php on line 45.
+ 1 APPPATH\Views\user\v_artikel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\user\\v_artikel.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\v_artikel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('user/v_artikel', [], true)
+ 5 APPPATH\Views\layoutUser\v_content.php(4): view('user/v_artikel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_content.php', [], true)
+ 9 APPPATH\Views\layoutUser\v_wrapper.php(4): view('layoutUser/v_content.php')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layoutUser\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('layoutUser/v_wrapper', [], true)
+13 APPPATH\Controllers\Home.php(74): view('layoutUser/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->Artikel()
+15 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-10-31 23:36:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kreasiaiweb', 3306, '', 0)
+#1 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\kreasiaiweb\app\Models\PerusahaanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\kreasiaiweb\app\Controllers\Home.php(30): App\Models\PerusahaanModel->DetailData()
+#6 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#7 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\project\\krea...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\kreasiaiweb\app\Models\PerusahaanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\kreasiaiweb\app\Controllers\Home.php(30): App\Models\PerusahaanModel->DetailData()
+#5 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Home->index()
+#6 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\kreasiaiweb\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\project\kreasiaiweb\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\project\\krea...')
+#10 {main}
+CRITICAL - 2023-10-31 23:36:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `perusahaan`
+WHERE `id_perusahaan` = :id_perusahaan:', [...], false)
+ 3 APPPATH\Models\PerusahaanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(30): App\Models\PerusahaanModel->DetailData()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -21,6 +21,13 @@ class Artikel extends BaseController
         $this->AdminModel = new AdminModel();
         $this->ArtikelModel = new ArtikelModel();
     }
+    public function test_input($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
     public function Artikel()
     {
         $keyword = $this->request->getVar('keyword');
@@ -130,7 +137,7 @@ class Artikel extends BaseController
             'slug_artikel' => url_title($this->request->getPost('judul_artikel'), '-', true),
             'id_user' => session()->get('id_user'),
             'deskripsi_artikel' => $this->request->getVar('deskripsi_artikel'),
-            'isi_artikel' => $this->request->getVar('isi_artikel'),
+            'isi_artikel' => $this->test_input($this->request->getVar('isi_artikel')),
             'gambar_artikel' => $namaGambar
         ];
         $this->ArtikelModel->InsertData($data);
@@ -212,7 +219,7 @@ class Artikel extends BaseController
             // generate nama file random
             $namaGambar = $fileGambar->getRandomName();
             // pindahkan gambar
-            $fileGambar->move('admin/uploads', $namaGambar);
+            $fileGambar->move('uploads/artikel', $namaGambar);
         }
         if ($this->request->getPost('judul_lama') == $this->request->getPost('judul_artikel')) {
             # code...

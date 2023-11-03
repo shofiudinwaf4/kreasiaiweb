@@ -14,10 +14,10 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="<?= base_url('/') ?>">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-                    <li><a class="nav-link scrollto" href="<?= base_url('artikel') ?>">Artikel</a></li>
-                    <li class="dropdown"><a href="#services"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
+                    <li><a class="nav-link scrollto <?= $submenu == 'Home' ? 'active' : '' ?>" href="<?= base_url('/') ?>">Home</a></li>
+                    <li><a class="nav-link scrollto <?= $submenu == 'about' ? 'active' : '' ?>" href="#about">Tentang Kami</a></li>
+                    <li><a class="nav-link scrollto <?= $submenu == 'Artikel' ? 'active' : '' ?>" href="<?= base_url('artikel') ?>">Artikel</a></li>
+                    <li class="dropdown <?= $submenu == 'Layanan' ? 'active' : '' ?>"><a href="#services"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <?php foreach ($layanan as $key => $l) { ?>
                                 <li><a href="<?= base_url('layanan/' . $l['slug']) ?>"><?= $l['nama_layanan']; ?></a></li>

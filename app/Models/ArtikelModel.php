@@ -37,6 +37,13 @@ class ArtikelModel extends Model
             ->where(['id_artikel' => $id_artikel])
             ->get()->getRowArray();
     }
+    public function DetailDataArtikel($slug)
+    {
+        return $this->db->table('artikel')
+            ->join('admin', 'admin.id_user=artikel.id_user', 'LEFT')
+            ->where(['slug_artikel' => $slug])
+            ->get()->getRowArray();
+    }
     public function DataByKategori($kategori)
     {
         return $this->table('tbl_berita')

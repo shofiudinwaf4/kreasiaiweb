@@ -23,6 +23,7 @@ class Home extends BaseController
     {
         $data = [
             'menu' => 'Home',
+            'submenu' => 'Home',
             'title' => 'Selamat datang di <strong> Kreasi AI </strong>',
             'isi' => 'user/v_home',
             'subtitle' => 'home',
@@ -60,13 +61,34 @@ class Home extends BaseController
     {
         $data = [
             'menu' => 'Home',
-            'submenu' => 'Layanan',
+            'submenu' => 'Artikel',
             'title' => 'Selamat datang di <br> Kreasi AI <br> Kami siap Melayani!',
-            'isi' => 'user/v_layanan',
-            'subtitle' => 'layanan',
-            'titlelayanan' => 'layanan',
-            'stlayanan' => 'Kami Siap Melayani Anda',
+            'isi' => 'user/v_artikel',
+            'subtitle' => 'artikel',
+            'titleartikel' => 'artikel',
+            'startikel' => 'Lebih dekat dengan kami melalui artikel yang kami berikan',
+            'artikel' => $this->ArtikelModel->paginate(5, 'artikel'),
+            'pager' => $this->ArtikelModel->pager,
             'perusahaan' => $this->PerusahaanModel->DetailData(),
+            'artikelbaru' => $this->ArtikelModel->DataLimit(),
+        ];
+
+        echo view('layoutUser/v_wrapper', $data);
+    }
+    public function SingleArtikel($slug)
+    {
+        $data = [
+            'menu' => 'Home',
+            'submenu' => 'Artikel',
+            'title' => 'Selamat datang di <br> Kreasi AI <br> Kami siap Melayani!',
+            'isi' => 'user/v_singleartikel',
+            'subtitle' => 'artikel',
+            'titleartikel' => 'artikel',
+            'startikel' => 'Lebih dekat dengan kami melalui artikel yang kami berikan',
+            'artikel' => $this->ArtikelModel->DetailDataArtikel($slug),
+            'pager' => $this->ArtikelModel->pager,
+            'perusahaan' => $this->PerusahaanModel->DetailData(),
+            'artikelbaru' => $this->ArtikelModel->DataLimit(),
         ];
 
         echo view('layoutUser/v_wrapper', $data);

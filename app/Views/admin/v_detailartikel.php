@@ -36,7 +36,7 @@
                     <span>Author : <?= $artikel['nama_lengkap']; ?></span><br>
                     <span>time : <?= date('d-M-Y', strtotime($artikel['create_at'])); ?></span>
                     <p>Deskripsi Artikel : <?= $artikel['deskripsi_artikel']; ?></p>
-                    <p>Isi Artikel : <?= $artikel['isi_artikel']; ?></p>
+                    <p>Isi Artikel : <?= htmlspecialchars_decode(htmlspecialchars_decode($artikel['isi_artikel'])); ?></p>
                 </div>
 
                 <div class="card-footer">

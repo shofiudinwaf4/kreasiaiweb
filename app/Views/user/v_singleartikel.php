@@ -18,25 +18,24 @@
 
             <div class="row">
 
-                <div class="col-lg-8 justify-content-center align-items-stretch order-1 order-lg-1">
+                <div class="col-lg-8 d-flex flex-column justify-content-center align-items-stretch order-1 order-lg-1">
 
                     <div class="accordion-list">
                         <ul>
-                            <?php foreach ($artikel as $key => $a) { ?>
-                                <li>
-                                    <a href="<?= base_url('singleartikel/' . $a['slug_artikel']); ?>">
-                                        <h3><?= $a['judul_artikel']; ?>
-                                        </h3>
-                                    </a>
-                                    <span><?= date('d M Y', strtotime($a['create_at'])); ?></span>
+                            <li>
+                                <img src="<?= base_url('uploads/artikel/' . $artikel['gambar_artikel']); ?>" alt="">
+                                <h3><?= $artikel['judul_artikel']; ?>
+                                </h3>
+                                <span><?= date('d M Y', strtotime($artikel['create_at'])); ?> | <?= $artikel['nama_lengkap']; ?></span>
+                                <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                                     <p>
-                                        <?= $a['deskripsi_artikel']; ?>
+                                        <?= htmlspecialchars_decode($artikel['isi_artikel']); ?>
+
                                     </p>
-                                </li>
-                            <?php } ?>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <?= $pager->links('artikel', 'pager_artikel'); ?>
                 </div>
 
                 <div class="col-lg-4 align-items-stretch order-2 order-lg-2">
@@ -54,7 +53,7 @@
                             <li>
                                 <?php foreach ($artikelbaru as $key => $ab) { ?>
                                     <div class="artikel-list">
-                                        <a href="<?= base_url('singleartikel/' . $ab['slug_artikel']); ?>">
+                                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed" href="<?= base_url('singleartikel/' . $ab['slug_artikel']); ?>">
                                             <h6><?= $ab['judul_artikel']; ?></h6>
                                         </a>
                                         <span><?= date('d M Y', strtotime($ab['create_at'])); ?></span>
